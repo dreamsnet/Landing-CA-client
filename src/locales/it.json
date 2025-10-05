@@ -1,0 +1,324 @@
+{
+    "topBanner": "Ottieni un'analisi gratuita dei capelli in due minuti ->", 
+    "hairTransplant": "Trapianto di Capelli",
+    "turkey": "Turchia",
+    "successfulTreatments": "OLTRE 25.000 TRATTAMENTI DI SUCCESSO",
+    "satisfaction": "96% TASSO DI SODDISFAZIONE",
+    "freeConsultation": "CONSULENZA GRATUITA",
+    "wpMessage": "Ciao, sono interessato ai vostri servizi di trapianto di capelli. Potete darmi maggiori informazioni?",
+    "wpNumber": "15146044154",
+  
+    "startPopup": "Inizia il tuo cambiamento",
+
+     
+    "selectFile": "Seleziona File",
+    "more": "altro",
+    "fullNameRequired": "Il nome completo è obbligatorio",
+    "emailRequired": "L'email è obbligatoria",
+    "emailInvalid": "Inserisci un'email valida",
+    "phoneRequired": "Il numero di telefono è obbligatorio",
+    "phoneInvalid": "Inserisci un numero di telefono valido",
+    "sendingMessage": "Invio del messaggio in corso...",
+    "sendMessageFormError": "Si è verificato un errore con il modulo",
+    "sendSuccessfully": "Inviato con successo. Ti contatteremo presto.",
+    "formError": "Si è verificato un errore con il modulo",
+    "free": "Consulenza",
+    "consultation": "Gratuita", 
+    "in": "in",
+    "seconds": "secondi",
+    "fullName": "Nome Completo*",
+    "email": "Email*",
+    "phone": "Telefono*",
+    "message": "Messaggio",
+    "send": "Invia",
+    "next": "Avanti!",
+    "selectTreatment": "Seleziona Trattamento (Opzionale)",
+    "dhiHairTransplant": "Trapianto di Capelli DHI",
+    "sapphireHairTransplant": "Trapianto di Capelli Zaffiro",
+    "fueHairTransplant": "Trapianto di Capelli FUE",
+    "eyebrowTransplant": "Trapianto di Sopracciglia",
+    "beardTransplant": "Trapianto di Barba",
+    "futHairTransplant": "Trapianto di Capelli FUT",
+    "roboticHairTransplant": "Trapianto di Capelli Robotico", 
+    "hybridHairTransplant": "Trapianto di Capelli Ibrido",
+    "privacy": "La tua privacy è la nostra priorità.",
+
+    "provenResults": "Risultati Dimostrati",
+    "ourSuccessStory": "La Nostra Storia di Successo",
+    "testimonialsText": "Oltre 5.000 trattamenti di successo con un tasso di soddisfazione del 96%, che ci rende una scelta leader per la restaurazione dei capelli a Istanbul.",
+    "happyPatients": "Pazienti Felici",
+    "yearsExperience": "Anni di Esperienza",
+    "countries": "Paesi",
+    "grafts": "Innesti",
+    
+    "medartHairIst": "Medart Hair a Istanbul",
+    "careForYou": "CI PRENDIAMO CURA DI TE",
+    "careForYouText": "Accettiamo solo 3 casi al giorno per garantire che i nostri pazienti ricevano l'esperienza più lussuosa e personalizzata possibile.",
+
+    "hairTransplantTurkey": "Trapianto di Capelli in Turchia",
+    "successStories": "Storie di Successo",
+    "storiesText": "Ascolta le esperienze dirette dai nostri pazienti soddisfatti che hanno scelto Medart Hair per il loro trapianto di capelli in Turchia.",
+    "videos": [
+        {
+          "id": 1,
+          "title": "La Mia Esperienza di Trapianto di Capelli",
+          "clinic": "Trapianto di Capelli DHI",
+          "views": "555K Visualizzazioni",
+          "duration": "0.60 Minuti",
+          "image": "/videothumbnamils/jj.webp",
+          "youtubeId": "zwiXt3auIco"
+        },
+        {
+          "id": 2,
+          "title": "Esperienza del Paziente da Medart",
+          "clinic": "Trapianto di Capelli Zaffiro",
+          "views": "423K Visualizzazioni",
+          "duration": "0.58 Minuti",
+          "image": "/videothumbnamils/sl.webp",
+          "youtubeId": "VbXjrDtVQ8o"
+        },
+        {
+          "id": 3,
+          "title": "Il Mio Viaggio di Trapianto di Capelli",
+          "clinic": "Trapianto di Capelli FUE",
+          "views": "612K Visualizzazioni",
+          "duration": "0.45 Minuti",
+          "image": "/videothumbnamils/mm.webp",
+          "youtubeId": "aMtdTjzckx4"
+        },
+        {
+          "id": 4,
+          "title": "1 Anno Dopo il Trapianto FUE",
+          "clinic": "Trapianto di Capelli FUE",
+          "views": "489K Visualizzazioni",
+          "duration": "0.60 Minuti",
+          "image": "/videothumbnamils/jp.webp",
+          "youtubeId": "SHSvapNRO3o"
+        },
+        {
+          "id": 6,
+          "title": "Incredibile Trasformazione con Trapianto di Capelli",
+          "clinic": "Trapianto di Capelli Zaffiro",
+          "views": "542K Visualizzazioni",
+          "duration": "0.52 Minuti",
+          "image": "/videothumbnamils/hw.webp",
+          "youtubeId": "VgVlOSphAzo"
+        }
+    ],
+    "getFreeConsultation": "Consulenza Gratuita",
+
+    "ourServices": "I Nostri Servizi",
+    "premiumSolutions": "Soluzioni Premium per Trapianto di Capelli",
+    "advantages": "Vantaggi",
+    "dhiText": "Il Trapianto di Capelli DHI (Direct Hair Implantation) è una tecnica raffinata di restauro dei capelli che utilizza uno strumento specializzato simile a una penna chiamato impiantatore Choi per posizionare direttamente i follicoli piliferi nel cuoio capelluto senza creare siti riceventi in anticipo.",
+    "dhiText2": "Questo metodo offre un controllo preciso sull'angolo, la profondità e la direzione dei capelli impiantati.",
+    "fueText": "Il Trapianto di Capelli FUE Zaffiro (Follicular Unit Extraction) è una tecnica avanzata di restauro dei capelli che utilizza lame in zaffiro ultra-affilate per creare siti riceventi per i follicoli piliferi trapiantati, offrendo incisioni più precise e guarigione più rapida rispetto agli strumenti tradizionali in acciaio.",
+    "fueText2": "Questo metodo raffinato consente un posizionamento più denso degli innesti minimizzando il trauma al cuoio capelluto.",
+    "hybridText": "Il Trapianto di Capelli Ibrido è una tecnica combinata che unisce la capacità di incisione precisa del FUE Zaffiro con il metodo di impianto diretto del DHI, permettendo ai chirurghi di selezionare l'approccio più appropriato per diverse aree del cuoio capelluto per ottenere risultati ottimali.",
+    "hybridText2": "Questo metodo personalizzato massimizza i vantaggi di entrambe le tecniche in un'unica sessione.",
+    "highestGraft": "Il più alto tasso di sopravvivenza degli innesti",
+    "noShave": "Opzione senza rasatura",
+    "invisibleScarring": "Cicatrici invisibili",
+    "natural": "Risultati Naturali",
+    "custom": "Attaccatura Personalizzata",
+    "maximumDensity": "Massima Densità",
+    "customPlacement": "Posizionamento Personalizzato dei Capelli",
+    "freeDHICons": "Consulenza DHI Gratuita",
+    "freeFUECons": "Consulenza Zaffiro FUE Gratuita",
+    "freeHybridCons": "Consulenza Ibrida Gratuita",
+
+    "resultsTitle": "Risultati del Trapianto di Capelli",
+    "beforeAfter": "Prima - Dopo", 
+    "dhiVideos": [
+        {
+          "id": 1,
+          "title": "Risultati Trapianto di Capelli DHI",
+          "clinic": "Trapianto di Capelli DHI",
+          "views": "423K Visualizzazioni",
+          "duration": "42.30 Minuti",
+          "image": "/BeforeAfter/dhi_ba1.webp"
+        },
+        {
+          "id": 2,
+          "title": "Risultati Trapianto di Capelli DHI",
+          "clinic": "Trapianto di Capelli DHI",
+          "views": "423K Visualizzazioni",
+          "duration": "42.30 Minuti",
+          "image": "/BeforeAfter/dhi_ba2.webp"
+        },
+        {
+          "id": 2,
+          "title": "Risultati Trapianto di Capelli DHI",
+          "clinic": "Trapianto di Capelli DHI",
+          "views": "",
+          "duration": "",
+          "image": "/BeforeAfter/dhi_ba3.webp"
+        }
+    ],
+    "sapphireVideos": [
+        {
+          "id": 1,
+          "title": "Risultati Trapianto di Capelli Zaffiro",
+          "clinic": "Trapianto di Capelli Zaffiro",
+          "views": "555K Visualizzazioni",
+          "duration": "46.50 Minuti",
+          "image": "/BeforeAfter/fue_ba1.webp"
+        },
+        {
+          "id": 1,
+          "title": "Risultati Trapianto di Capelli Zaffiro",
+          "clinic": "Trapianto di Capelli Zaffiro",
+          "views": "",
+          "duration": "",
+          "image": "/BeforeAfter/fue_ba2.webp"
+        },
+        {
+          "id": 1,
+          "title": "Risultati Trapianto di Capelli Zaffiro",
+          "clinic": "Trapianto di Capelli Zaffiro",
+          "views": "",
+          "duration": "",
+          "image": "/BeforeAfter/fue_ba3.webp"
+        }
+    ],
+
+    "yourJourney": "Il Tuo Percorso",
+    "inTurkey": "In Turchia",
+    "freeConsultationJ": "Consulenza Gratuita",
+    "FreeConsultationText": "Inizia con una consulenza online gratuita. I nostri esperti valutano le tue esigenze e progettano un piano di trattamento personalizzato.",
+    "easyApp": "Appuntamento Facile",
+    "easyAppText": "Scegli una data conveniente per la tua procedura. Ti guideremo attraverso le preparazioni preoperatorie e gli accordi di viaggio.",
+    "vipTransfer": "Trasferimento VIP",
+    "vipTransferText": "Goditi il prelievo gratuito all'aeroporto all'arrivo a Istanbul. Garantiamo un trasporto confortevole verso il tuo hotel.",
+    "operation": "Operazione",
+    "operationText": "Sottoponiti al trapianto di capelli con i nostri chirurghi esperti. Esperienza di cura di alta qualità nella nostra struttura all'avanguardia.",
+    "luxHotel": "Hotel di Lusso",
+    "luxHotelText": "Rilassati in un hotel di lusso nelle vicinanze, incluso nel tuo pacchetto. Riposa e recupera comodamente dopo la procedura.",
+    "Aftercare": "Assistenza Post-operatoria",
+    "aftercareText": "Ritorna per un controllo finale prima della partenza. Ricevi istruzioni per le cure post-operatorie per risultati ottimali.",
+
+    "medartHairTransplant": "Trapianto di Capelli Medart",
+    "contactUs": "Contattaci!",
+      
+    "luxAmen": "Servizi di Lusso",
+    "included": "Inclusi",
+    "luxAmenText": "Scopri i servizi di lusso inclusi nei nostri pacchetti tutto compreso.",
+    "luxAcc": "Alloggio di Lusso",
+    "luxAccText": "Goditi un soggiorno confortevole al Fairmont Quasar 5 stelle",
+    "vipTransferAmen": "Trasferimento VIP",
+    "vipTransferAmenText": "Prelievo e riconsegna in aeroporto gratuiti in veicoli di lusso per un'esperienza senza stress",
+    "personCare": "Assistenza Personalizzata",
+    "personCareText": "Ricevi supporto continuo dal tuo assistente personale e traduttore durante tutto il processo.",
+    "postopSupport": "Supporto Post-operatorio",
+    "postopSupportText": "Beneficia di un'assistenza post-operatoria completa e supporto continuo fino a raggiungere i tuoi obiettivi per i capelli",
+
+    "packagesTitle": "Pacchetti per Trapianto di Capelli",
+    "packagesSubtitle": "Scopri i nostri pacchetti tutto compreso per trapianto di capelli a Istanbul.", 
+    "bannerTitle": "Trapianto di Capelli in Turchia",
+    "bannerText": "Esperienza restauro dei capelli di livello mondiale a Medart Hair a Istanbul. Ti aspettano cure premium, tecniche all'avanguardia e risultati naturali.",
+    "consultationButton": "Consulenza Gratuita",
+    "packageData": {
+        "premium": {
+          "name": "Premium",
+          "type": "premium", 
+          "svg": " <svg        xmlns=\"http://www.w3.org/2000/svg\"        width=\"34\"        height=\"34\"        viewBox=\"0 0 39 52\"        fill=\"#0071E3\"      >        <path          d=\"M13.9364 29.1277L16.0648 21.9157L10.4638 17.7088H17.4636L19.6056 10.4213L21.7504 17.7088H28.7475L23.1301 21.913L25.2612 29.1277L19.6056 24.6496L13.9364 29.1277ZM5.9448 52.0076V33.5863C4.21443 31.8439 2.87112 29.8033 1.91486 27.4645C0.958598 25.1313 0.480469 22.6323 0.480469 19.9674C0.480469 14.5127 2.3347 9.88832 6.04316 6.09411C9.75163 2.2999 14.2725 0.401859 19.6056 0.399995C24.9388 0.398132 29.4597 2.29524 33.1681 6.09131C36.8766 9.88739 38.7308 14.5127 38.7308 19.9674C38.7308 22.6304 38.2527 25.1304 37.2964 27.4673C36.3402 29.8042 34.9969 31.842 33.2665 33.5807V52.002L19.6056 47.809L5.9448 52.0076ZM19.6056 36.7394C24.1593 36.7394 28.0298 35.1088 31.2174 31.8476C34.4049 28.5864 35.9987 24.6263 35.9987 19.9674C35.9987 15.3085 34.4049 11.3484 31.2174 8.08719C28.0298 4.82595 24.1593 3.19534 19.6056 3.19534C15.052 3.19534 11.1815 4.82595 7.99393 8.08719C4.8064 11.3484 3.21264 15.3085 3.21264 19.9674C3.21264 24.6263 4.8064 28.5864 7.99393 31.8476C11.1815 35.1088 15.052 36.7394 19.6056 36.7394ZM8.67697 48.0438L19.6056 44.9102L30.5343 48.0438V35.94C29.0116 37.0861 27.3186 37.9713 25.4552 38.5956C23.5955 39.2217 21.6457 39.5348 19.6056 39.5348C17.5656 39.5348 15.6158 39.2226 13.7561 38.5984C11.8964 37.9741 10.2033 37.0879 8.67697 35.94V48.0438Z\"          fill=\"white\"></path>      </svg>",
+          "features": [
+            "Trapianto di Capelli FUE Zaffiro",
+            "Esami del Sangue",
+            "Farmaci Post-operatori",
+            "Shampoo e Lozione Speciale",
+            "Primo lavaggio da uno specialista",
+            "Estrazione dalla barba se necessario",
+            "2 notti di alloggio",
+            "Trasferimento Aeroportuale VIP",
+            "Priorità al comfort del paziente durante tutta la procedura",
+            "Accompagnatore Personale e Interprete"
+          ],
+          "consultationText": "Consulenza Gratuita",
+          "consultationLink": "https://api.whatsapp.com/send?phone=15146044154&text=Ciao%2C%20sono%20interessato%20ai%20vostri%20servizi%20di%20trapianto%20di%20capelli.%20Potete%20darmi%20maggiori%20informazioni%3F"
+        },
+        "elite": {
+          "name": "Elite",
+          "type": "elite",
+          "popular": true, 
+          "svg": "<svg        width=\"34\"        height=\"34\"        viewBox=\"0 0 52 53\"        fill=\"none\"        xmlns=\"http://www.w3.org/2000/svg\"      >        <path          d=\"M10.3543 0.399999H15.8094L10.3386 16.1287H0.919922L8.02305 1.84704C8.23982 1.41216 8.57268 1.04648 8.98438 0.790928C9.39608 0.535373 9.8704 0.400015 10.3543 0.399999ZM1.10767 21.3716L16.8263 45.945L10.1978 21.3716H1.10767ZM15.6008 21.3716L23.5801 50.9677C23.7215 51.5045 24.0355 51.9791 24.4731 52.3177C24.9108 52.6564 25.4476 52.84 25.9999 52.84C26.5522 52.84 27.089 52.6564 27.5267 52.3177C27.9644 51.9791 28.2784 51.5045 28.4198 50.9677L36.4199 21.3716H15.6008ZM41.8229 21.3716L35.1787 45.9346L50.8922 21.3716H41.8229ZM51.0799 16.1287H41.6769L36.2009 0.399999H41.6456C42.1303 0.399041 42.6057 0.533939 43.0185 0.789548C43.4312 1.04516 43.7648 1.41136 43.982 1.84704L51.0799 16.1287ZM36.154 16.1287H15.8667L21.3323 0.399999H30.6675L36.154 16.1287Z\"          fill=\"white\"></path>      </svg>",
+          "popularTagSvg": " <svg            width=\"82\"            height=\"82\"            viewBox=\"0 0 82 82\"            fill=\"none\"            xmlns=\"http://www.w3.org/2000/svg\"          >            <path              fill-rule=\"evenodd\"              clip-rule=\"evenodd\"              d=\"M30.06 3.84808C32.8608 1.46146 36.3943 0.105567 40.0727 0.00591274C43.7511 -0.0937415 47.3528 1.06885 50.2787 3.30033L50.9634 3.84808L52.4778 5.13693C53.5801 6.07791 54.9159 6.70406 56.3443 6.94937L57.0613 7.03797L59.0469 7.19908C62.7252 7.49257 66.1913 9.03987 68.8657 11.5823C71.5401 14.1247 73.2606 17.5082 73.7397 21.1669L73.8243 21.9725L73.9854 23.9621C74.0995 25.4053 74.6003 26.7911 75.4353 27.9736L75.8784 28.5456L77.1753 30.06C79.5619 32.8608 80.9178 36.3943 81.0175 40.0727C81.1171 43.7511 79.9545 47.3528 77.7231 50.2787L77.1753 50.9634L75.8824 52.4778C74.9414 53.5801 74.3153 54.9159 74.07 56.3443L73.9814 57.0613L73.8243 59.0469C73.5308 62.7252 71.9835 66.1913 69.4411 68.8657C66.8987 71.5401 63.5152 73.2606 59.8564 73.7397L59.0469 73.8243L57.0613 73.9854C55.6181 74.0995 54.2323 74.6003 53.0497 75.4353L52.4778 75.8824L50.9594 77.1713C48.159 79.5585 44.6258 80.9151 40.9474 81.0155C37.269 81.1159 33.667 79.954 30.7406 77.7231L30.06 77.1753L28.5456 75.8824C27.4432 74.9414 26.1075 74.3153 24.679 74.07L23.9621 73.9854L21.9765 73.8243C18.2982 73.5308 14.8321 71.9835 12.1577 69.4411C9.4833 66.8987 7.76274 63.5152 7.28366 59.8564L7.19908 59.0509L7.03797 57.0613C6.92391 55.6181 6.42303 54.2323 5.58803 53.0497L5.14096 52.4778L3.84808 50.9594C1.46146 48.1586 0.105567 44.6251 0.00591274 40.9467C-0.0937415 37.2683 1.06885 33.6666 3.30033 30.7406L3.84808 30.06L5.13693 28.5456C6.07791 27.4432 6.70406 26.1075 6.94937 24.679L7.03797 23.9621L7.19908 21.9765C7.49257 18.2982 9.03987 14.8321 11.5823 12.1577C14.1247 9.4833 17.5082 7.76274 21.1669 7.28366L21.9725 7.19908L23.9621 7.03797C25.4053 6.92391 26.7911 6.42303 27.9736 5.58803L28.5456 5.14096L30.06 3.84808Z\"              fill=\"url(#paint0_linear_845_2622)\"></path>            <path              d=\"M30.0196 9.35886L30.0196 9.35878L29.5141 9.75387L29.5096 9.7574L29.5095 9.75729C28.4472 10.5074 27.2024 10.9573 25.906 11.0599L30.0196 9.35886ZM30.0196 9.35886L30.0235 9.35556L31.3617 8.21307L30.0196 9.35886ZM69.9858 25.9083L69.9858 25.9085C70.0883 27.205 70.5382 28.4498 71.2883 29.5121L71.2882 29.5122L71.2914 29.5163L71.6829 30.0217L71.6828 30.0218L71.6866 30.0262L72.8325 31.3643C74.9241 33.8191 76.1125 36.9159 76.1998 40.1398C76.2871 43.3633 75.2685 46.5195 73.3133 49.0838C73.313 49.0841 73.3128 49.0844 73.3126 49.0847L72.8326 49.6847L72.8302 49.6876L71.69 51.0231C70.8447 52.0134 70.2822 53.2134 70.0618 54.4966L70.0617 54.4966L70.061 54.5021L69.9827 55.1357L69.9826 55.1357L69.9822 55.1408L69.8434 56.8955C69.8434 56.8956 69.8434 56.8956 69.8434 56.8956C69.5861 60.1194 68.2301 63.1572 66.0019 65.5011C63.774 67.8446 60.8093 69.3524 57.6033 69.7726C57.6028 69.7727 57.6023 69.7727 57.6018 69.7728L56.8922 69.8469L56.8894 69.8472L55.1377 69.9893C53.8412 70.0918 52.5963 70.5417 51.5339 71.2919L51.5339 71.2918L51.5293 71.2953L51.0239 71.6904L51.0239 71.6903L51.0202 71.6934L49.6784 72.8324L49.6782 72.8326C47.2239 74.9248 44.1274 76.1138 40.9036 76.2017C37.6803 76.2897 34.5241 75.2718 31.9596 73.3172C31.9592 73.3169 31.9587 73.3165 31.9583 73.3162L31.3618 72.8362L31.3592 72.834L30.0235 71.6936C29.0332 70.8483 27.8332 70.2858 26.55 70.0654L26.55 70.0652L26.5439 70.0645L25.9103 69.9897L25.9103 69.9897L25.9061 69.9893L24.1513 69.8469L24.1512 69.8469C20.9274 69.5897 17.8897 68.2336 15.5458 66.0053C13.2024 63.7774 11.6945 60.8127 11.2744 57.6066C11.2743 57.6061 11.2743 57.6056 11.2742 57.6051L11.2001 56.899L11.1998 56.8962L11.0577 55.1409C11.0577 55.1408 11.0577 55.1407 11.0577 55.1406C10.9552 53.8442 10.5052 52.5994 9.75516 51.5371L9.75528 51.537L9.75174 51.5325L9.35666 51.027L9.35674 51.027L9.35354 51.0232L8.211 49.6813L8.21097 49.6813C6.11931 47.2265 4.93099 44.1297 4.84365 40.9058C4.75633 37.6824 5.7749 34.5263 7.72998 31.9621L8.21206 31.3631L9.34989 30.0261C10.1952 29.0358 10.7577 27.8358 10.9781 26.5525L10.9782 26.5526L10.9789 26.5471L11.0572 25.9135L11.0573 25.9135L11.0577 25.9086L11.2001 24.1538L11.2001 24.1536C11.4573 20.9298 12.8134 17.892 15.0416 15.5481C17.2694 13.2046 20.2341 11.6967 23.4402 11.2766L24.1491 11.2021L25.9058 11.0599L70.1032 25.899L69.9858 25.9083ZM69.9858 25.9083L69.8437 24.153M69.9858 25.9083L69.8437 24.153M69.8437 24.153L69.8434 24.1502L69.7693 23.4441C69.7692 23.4435 69.7691 23.443 69.769 23.4424C69.3489 20.2364 67.8411 17.2717 65.4976 15.0438C63.1538 12.8156 60.116 11.4595 56.8923 11.2022L56.8922 11.2022L55.1374 11.0598L55.1325 11.0594L55.1325 11.0593L54.4989 10.981L54.4934 10.9804L54.4934 10.9802C53.2103 10.7599 52.0104 10.1974 51.0201 9.35212C51.0201 9.35208 51.02 9.35204 51.02 9.35201L49.6846 8.21539L49.6818 8.21311L49.0816 7.73299C49.0813 7.73272 49.0809 7.73245 49.0806 7.73218C46.5164 5.77697 43.3603 4.75834 40.137 4.84567C36.9132 4.93301 33.8165 6.12132 31.3618 8.213L69.8437 24.153Z\"              stroke=\"white\"              stroke-width=\"0.235533\"></path>            <path              d=\"M24.5345 38.3901V28.8732H25.9686L29.2599 35.6144L32.5512 28.8732H33.9853V38.3901H32.4983V32.2901L29.5771 38.3901H28.9427L26.0281 32.2901V38.3901H24.5345ZM38.9945 38.5884C38.2807 38.5884 37.6573 38.4276 37.1242 38.106C36.591 37.7843 36.1769 37.3415 35.8817 36.7776C35.5909 36.2092 35.4455 35.5571 35.4455 34.8213C35.4455 34.0723 35.5953 33.4158 35.8949 32.8518C36.1945 32.2879 36.6109 31.8473 37.144 31.53C37.6771 31.2128 38.2939 31.0542 38.9945 31.0542C39.7127 31.0542 40.3383 31.215 40.8714 31.5367C41.4046 31.8583 41.8187 32.3033 42.1139 32.8717C42.4091 33.4356 42.5567 34.0855 42.5567 34.8213C42.5567 35.5615 42.4069 36.2158 42.1073 36.7842C41.8121 37.3481 41.3979 37.7909 40.8648 38.1126C40.3317 38.4298 39.7083 38.5884 38.9945 38.5884ZM38.9945 37.0948C39.6289 37.0948 40.1004 36.8833 40.4088 36.4603C40.7172 36.0373 40.8714 35.491 40.8714 34.8213C40.8714 34.1296 40.715 33.5788 40.4022 33.1691C40.0894 32.7549 39.6201 32.5478 38.9945 32.5478C38.5671 32.5478 38.2146 32.6448 37.9371 32.8386C37.6639 33.0281 37.4612 33.2946 37.329 33.6383C37.1969 33.9776 37.1308 34.3719 37.1308 34.8213C37.1308 35.513 37.2872 36.066 37.6 36.4801C37.9172 36.8899 38.3821 37.0948 38.9945 37.0948ZM46.601 38.5884C45.7198 38.5884 45.0038 38.3901 44.4531 37.9936C43.9023 37.5971 43.5675 37.0397 43.4485 36.3215L45.0743 36.0704C45.158 36.4229 45.3431 36.7004 45.6295 36.9031C45.9159 37.1058 46.2771 37.2071 46.7133 37.2071C47.0967 37.2071 47.3919 37.1322 47.5989 36.9824C47.8104 36.8282 47.9162 36.6189 47.9162 36.3546C47.9162 36.1916 47.8765 36.0616 47.7972 35.9647C47.7223 35.8633 47.5549 35.7664 47.2949 35.6739C47.035 35.5813 46.6362 35.4646 46.0987 35.3236C45.4995 35.165 45.0236 34.9953 44.6712 34.8147C44.3187 34.6296 44.0653 34.4115 43.9111 34.1604C43.7569 33.9093 43.6798 33.6053 43.6798 33.2484C43.6798 32.8034 43.7966 32.4156 44.0301 32.0852C44.2636 31.7547 44.5897 31.5014 45.0082 31.3252C45.4268 31.1445 45.9203 31.0542 46.4886 31.0542C47.0438 31.0542 47.535 31.1401 47.9624 31.3119C48.3942 31.4838 48.7423 31.7283 49.0066 32.0455C49.271 32.3628 49.434 32.7351 49.4957 33.1625L47.8699 33.4532C47.8302 33.1492 47.6915 32.9091 47.4535 32.7329C47.22 32.5566 46.9072 32.4575 46.5151 32.4355C46.1406 32.4134 45.8387 32.4707 45.6096 32.6073C45.3805 32.7395 45.266 32.9267 45.266 33.1691C45.266 33.3056 45.3122 33.4224 45.4048 33.5193C45.4973 33.6163 45.6823 33.7132 45.9599 33.8101C46.2419 33.9071 46.6605 34.026 47.2156 34.167C47.784 34.3124 48.2378 34.4798 48.5771 34.6693C48.9207 34.8543 49.1675 35.0768 49.3173 35.3368C49.4715 35.5968 49.5486 35.9118 49.5486 36.2819C49.5486 37.0001 49.2864 37.564 48.7621 37.9738C48.2422 38.3835 47.5218 38.5884 46.601 38.5884ZM55.1796 38.3901C54.7082 38.4783 54.2455 38.5157 53.7917 38.5025C53.3423 38.4937 52.9392 38.4122 52.5823 38.258C52.2254 38.0993 51.9544 37.8504 51.7694 37.5111C51.6064 37.2027 51.5205 36.8877 51.5116 36.5661C51.5028 36.2444 51.4984 35.8809 51.4984 35.4756V29.2698H53.0846V35.3831C53.0846 35.6695 53.0868 35.9206 53.0912 36.1365C53.1 36.3524 53.1463 36.5286 53.23 36.6652C53.3886 36.9296 53.6419 37.0772 53.99 37.108C54.3381 37.1388 54.7346 37.1212 55.1796 37.0551V38.3901ZM50.2031 32.5016V31.2525H55.1796V32.5016H50.2031ZM15.8667 53.3901V43.8732H19.799C19.8916 43.8732 20.0105 43.8776 20.1559 43.8865C20.3013 43.8909 20.4357 43.9041 20.5591 43.9261C21.1098 44.0098 21.5636 44.1927 21.9205 44.4747C22.2818 44.7566 22.5484 45.1135 22.7202 45.5453C22.8964 45.9727 22.9846 46.4485 22.9846 46.9728C22.9846 47.4927 22.8964 47.9686 22.7202 48.4004C22.544 48.8278 22.2752 49.1824 21.9139 49.4644C21.557 49.7464 21.1054 49.9292 20.5591 50.013C20.4357 50.0306 20.2991 50.0438 20.1493 50.0526C20.0039 50.0614 19.8872 50.0658 19.799 50.0658H17.4595V53.3901H15.8667ZM17.4595 48.5788H19.7329C19.8211 48.5788 19.9202 48.5744 20.0303 48.5656C20.1405 48.5568 20.2418 48.5392 20.3344 48.5127C20.5987 48.4466 20.8058 48.3299 20.9556 48.1625C21.1098 47.995 21.2178 47.8056 21.2794 47.5941C21.3455 47.3826 21.3786 47.1755 21.3786 46.9728C21.3786 46.7702 21.3455 46.5631 21.2794 46.3516C21.2178 46.1357 21.1098 45.944 20.9556 45.7766C20.8058 45.6092 20.5987 45.4924 20.3344 45.4263C20.2418 45.3999 20.1405 45.3845 20.0303 45.3801C19.9202 45.3713 19.8211 45.3669 19.7329 45.3669H17.4595V48.5788ZM27.3449 53.5884C26.6311 53.5884 26.0077 53.4276 25.4746 53.106C24.9415 52.7843 24.5273 52.3415 24.2321 51.7776C23.9413 51.2092 23.7959 50.5571 23.7959 49.8213C23.7959 49.0723 23.9457 48.4158 24.2453 47.8518C24.5449 47.2879 24.9613 46.8473 25.4944 46.53C26.0275 46.2128 26.6444 46.0542 27.3449 46.0542C28.0631 46.0542 28.6887 46.215 29.2219 46.5367C29.755 46.8583 30.1691 47.3033 30.4643 47.8717C30.7595 48.4356 30.9071 49.0855 30.9071 49.8213C30.9071 50.5615 30.7573 51.2158 30.4577 51.7842C30.1625 52.3481 29.7484 52.7909 29.2152 53.1126C28.6821 53.4298 28.0587 53.5884 27.3449 53.5884ZM27.3449 52.0948C27.9794 52.0948 28.4508 51.8833 28.7592 51.4603C29.0676 51.0373 29.2219 50.491 29.2219 49.8213C29.2219 49.1296 29.0654 48.5788 28.7526 48.1691C28.4398 47.7549 27.9706 47.5478 27.3449 47.5478C26.9175 47.5478 26.5651 47.6448 26.2875 47.8386C26.0143 48.0281 25.8116 48.2946 25.6795 48.6383C25.5473 48.9776 25.4812 49.3719 25.4812 49.8213C25.4812 50.513 25.6376 51.066 25.9504 51.4801C26.2677 51.8899 26.7325 52.0948 27.3449 52.0948ZM35.7933 53.5884C35.0972 53.5884 34.5134 53.4232 34.042 53.0927C33.5705 52.7623 33.2158 52.3129 32.9779 51.7445C32.74 51.1717 32.621 50.5307 32.621 49.8213C32.621 49.1031 32.74 48.4599 32.9779 47.8915C33.2158 47.3231 33.5639 46.8759 34.0221 46.5499C34.4848 46.2194 35.0553 46.0542 35.7338 46.0542C36.408 46.0542 36.9917 46.2194 37.4852 46.5499C37.9831 46.8759 38.3686 47.3231 38.6418 47.8915C38.915 48.4555 39.0515 49.0987 39.0515 49.8213C39.0515 50.5351 38.9172 51.1761 38.6484 51.7445C38.3796 52.3129 38.0007 52.7623 37.5117 53.0927C37.0226 53.4232 36.4498 53.5884 35.7933 53.5884ZM32.3501 56.5624V46.2525H33.7578V51.2621H33.956V56.5624H32.3501ZM35.5488 52.1609C35.963 52.1609 36.3044 52.0573 36.5732 51.8503C36.8419 51.6432 37.0402 51.3634 37.168 51.0109C37.3002 50.654 37.3663 50.2575 37.3663 49.8213C37.3663 49.3895 37.3002 48.9974 37.168 48.6449C37.0358 48.288 36.8309 48.006 36.5534 47.799C36.2758 47.5875 35.9233 47.4817 35.4959 47.4817C35.0906 47.4817 34.7601 47.5809 34.5046 47.7791C34.249 47.973 34.0596 48.2462 33.9362 48.5986C33.8172 48.9467 33.7578 49.3543 33.7578 49.8213C33.7578 50.2839 33.8172 50.6915 33.9362 51.044C34.0596 51.3964 34.2512 51.6718 34.5112 51.8701C34.7755 52.0639 35.1214 52.1609 35.5488 52.1609ZM43.1849 53.595C42.6562 53.595 42.22 53.5069 41.8764 53.3307C41.5327 53.1544 41.2595 52.9297 41.0568 52.6565C40.8542 52.3834 40.7044 52.0926 40.6074 51.7842C40.5105 51.4757 40.4466 51.1849 40.4158 50.9118C40.3893 50.6342 40.3761 50.4095 40.3761 50.2377V46.2525H41.9887V49.6891C41.9887 49.9094 42.0041 50.1584 42.035 50.4359C42.0658 50.7091 42.1363 50.9735 42.2465 51.229C42.361 51.4801 42.5284 51.6872 42.7487 51.8503C42.9734 52.0133 43.2752 52.0948 43.6542 52.0948C43.8568 52.0948 44.0573 52.0617 44.2556 51.9956C44.4538 51.9296 44.6323 51.8172 44.7909 51.6586C44.9539 51.4956 45.0839 51.2731 45.1808 50.9911C45.2778 50.7091 45.3262 50.3522 45.3262 49.9204L46.2713 50.3236C46.2713 50.9316 46.1523 51.4824 45.9144 51.9758C45.6809 52.4693 45.335 52.8636 44.8768 53.1588C44.4186 53.4496 43.8546 53.595 43.1849 53.595ZM45.5179 53.3901V51.1761H45.3262V46.2525H46.9256V53.3901H45.5179ZM48.9146 53.3901V43.675H50.5073V53.3901H48.9146ZM54.4829 53.5884C53.9674 53.5884 53.5312 53.4915 53.1744 53.2976C52.8175 53.0993 52.5465 52.8372 52.3615 52.5111C52.1808 52.1851 52.0905 51.826 52.0905 51.4339C52.0905 51.0902 52.1478 50.7818 52.2623 50.5086C52.3769 50.2311 52.5531 49.9931 52.791 49.7949C53.029 49.5922 53.3374 49.427 53.7163 49.2992C54.0027 49.2067 54.3375 49.123 54.7209 49.0481C55.1086 48.9732 55.5271 48.9049 55.9766 48.8432C56.4304 48.7771 56.904 48.7066 57.3975 48.6317L56.8291 48.9555C56.8335 48.4621 56.7234 48.0986 56.4987 47.8651C56.274 47.6315 55.895 47.5148 55.3619 47.5148C55.0403 47.5148 54.7297 47.5897 54.4301 47.7395C54.1305 47.8893 53.9212 48.147 53.8022 48.5127L52.3482 48.0567C52.5245 47.4531 52.8593 46.9684 53.3528 46.6027C53.8507 46.237 54.5204 46.0542 55.3619 46.0542C55.9964 46.0542 56.5537 46.1577 57.034 46.3648C57.5186 46.5719 57.8777 46.9112 58.1112 47.3826C58.239 47.6337 58.3161 47.8915 58.3426 48.1558C58.369 48.4158 58.3822 48.7 58.3822 49.0084V53.3901H56.9877V51.8436L57.219 52.0948C56.8974 52.6103 56.5207 52.9892 56.0889 53.2315C55.6615 53.4694 55.1262 53.5884 54.4829 53.5884ZM54.8002 52.3195C55.1615 52.3195 55.4699 52.2556 55.7254 52.1278C55.981 52.0001 56.1836 51.8436 56.3334 51.6586C56.4876 51.4735 56.5912 51.2995 56.6441 51.1365C56.7278 50.9338 56.774 50.7025 56.7828 50.4425C56.7961 50.1782 56.8027 49.9645 56.8027 49.8015L57.2917 49.9469C56.8115 50.0218 56.3995 50.0879 56.0559 50.1451C55.7122 50.2024 55.417 50.2575 55.1703 50.3104C54.9235 50.3588 54.7054 50.4139 54.516 50.4756C54.3309 50.5417 54.1745 50.6188 54.0467 50.7069C53.919 50.795 53.8198 50.8964 53.7493 51.0109C53.6832 51.1255 53.6502 51.2599 53.6502 51.4141C53.6502 51.5903 53.6943 51.7467 53.7824 51.8833C53.8705 52.0155 53.9983 52.1212 54.1657 52.2005C54.3375 52.2798 54.549 52.3195 54.8002 52.3195ZM60.1028 53.3901V46.2525H61.5105V47.9906L61.3387 47.7659C61.4268 47.528 61.5436 47.3121 61.689 47.1182C61.8388 46.92 62.0172 46.7569 62.2243 46.6292C62.4005 46.5102 62.5944 46.4177 62.8059 46.3516C63.0218 46.2811 63.2421 46.2392 63.4668 46.226C63.6915 46.2084 63.9096 46.2172 64.1211 46.2525V47.7395C63.9096 47.6778 63.665 47.658 63.3875 47.68C63.1143 47.702 62.8676 47.7791 62.6473 47.9113C62.427 48.0303 62.2463 48.1823 62.1053 48.3673C61.9687 48.5524 61.8674 48.7639 61.8013 49.0018C61.7352 49.2353 61.7022 49.4887 61.7022 49.7618V53.3901H60.1028Z\"              fill=\"white\"></path>            <defs>              <linearGradient                id=\"paint0_linear_845_2622\"                x1=\"6.12386\"                y1=\"-11.6532\"                x2=\"44.7401\"                y2=\"190.393\"                gradientUnits=\"userSpaceOnUse\"              >                <stop stop-color=\"#0071E3\"></stop>                <stop offset=\"1\" stop-color=\"#8DC1F6\"></stop>              </linearGradient>            </defs>          </svg>",
+        
+          "features": [
+            "Trapianto di Capelli FUE Zaffiro",
+            "Analisi Personalizzata dei Capelli",
+            "Esami del Sangue",
+            "Farmaci Post-operatori",
+            "Shampoo e Lozione Speciale",
+            "Primo lavaggio da uno specialista",
+            "Estrazione dalla barba se necessario",
+            "3 notti di alloggio in hotel 5*",
+            "Trasferimenti Aeroportuali VIP",
+            "Anestesia senza ago",
+            "Accompagnatore Personale e Interprete"
+          ],
+          "consultationText": "Ottieni Consulenza Gratuita",
+          "consultationLink": "https://api.whatsapp.com/send?phone=15146044154&text=Ciao%2C%20sono%20interessato%20ai%20vostri%20servizi%20di%20trapianto%20di%20capelli.%20Potete%20darmi%20maggiori%20informazioni%3F"
+        },
+        "luxury": {
+          "name": "Luxury",
+          "type": "luxury",
+         "svg": "<svg        xmlns=\"http://www.w3.org/2000/svg\"        width=\"34\"        height=\"34\"        viewBox=\"0 0 62 54\"        fill=\"none\"      >        <g clip-path=\"url(#clip0_1597_1594)\">          <path            d=\"M61.6401 16.4885C61.6401 13.377 59.1997 10.8468 56.1986 10.8468C53.1976 10.8468 50.7571 13.377 50.7571 16.4885C50.7571 17.9474 51.3068 19.2695 52.1862 20.2725L49.8118 24.273L47.7121 16.3859C49.1522 15.3716 50.1086 13.6505 50.1086 11.713C50.1086 8.60144 47.6682 6.07119 44.6671 6.07119C41.6661 6.07119 39.2256 8.60144 39.2256 11.713C39.2256 13.5138 40.0611 15.1094 41.3363 16.1352L38.61 24.0907L34.1689 10.8012C35.4771 9.76399 36.3235 8.15694 36.3235 6.33333C36.3235 3.22181 33.8831 0.691559 30.8821 0.691559C27.881 0.691559 25.4406 3.22181 25.4406 6.33333C25.4406 8.15694 26.298 9.77538 27.6062 10.8012L23.1651 24.1021L20.4279 16.1352C21.692 15.098 22.5275 13.5138 22.5275 11.7244C22.5275 8.61284 20.0871 6.08259 17.086 6.08259C14.085 6.08259 11.6446 8.61284 11.6446 11.7244C11.6446 13.6733 12.6009 15.3944 14.052 16.4087L11.9524 24.2844L9.57791 20.2725C10.4463 19.2695 10.996 17.9588 10.996 16.5113C10.996 13.3998 8.55557 10.8695 5.55452 10.8695C2.55347 10.8695 0.0800781 13.377 0.0800781 16.4885C0.0800781 18.8136 1.44319 20.8196 3.38893 21.6858C3.28999 27.943 4.05949 36.6166 7.87401 44.686C6.89565 45.1647 6.2031 46.1905 6.2031 47.3872V50.1226C6.2031 51.7753 7.50026 53.1202 9.09422 53.1202H52.6259C54.2199 53.1202 55.5171 51.7753 55.5171 50.1226V47.3872C55.5171 46.1905 54.8355 45.1647 53.8461 44.686C57.6607 36.6052 58.4302 27.9316 58.3312 21.6744C60.266 20.8082 61.6291 18.8136 61.6291 16.4885H61.6401ZM44.6671 8.35069C46.4589 8.35069 47.91 9.85517 47.91 11.713C47.91 13.5708 46.4589 15.0752 44.6671 15.0752C42.8753 15.0752 41.4242 13.5708 41.4242 11.713C41.4242 9.85517 42.8753 8.35069 44.6671 8.35069ZM30.8711 2.95967C32.6629 2.95967 34.114 4.46414 34.114 6.32194C34.114 8.17973 32.6629 9.68421 30.8711 9.68421C29.0792 9.68421 27.6282 8.17973 27.6282 6.32194C27.6282 4.46414 29.0792 2.95967 30.8711 2.95967ZM13.8102 11.713C13.8102 9.85517 15.2612 8.35069 17.053 8.35069C18.8449 8.35069 20.2959 9.85517 20.2959 11.713C20.2959 13.5708 18.8449 15.0752 17.053 15.0752C15.2612 15.0752 13.8102 13.5708 13.8102 11.713ZM2.27865 16.4885C2.27865 14.6307 3.72971 13.1263 5.52154 13.1263C7.31338 13.1263 8.76444 14.6307 8.76444 16.4885C8.76444 18.3463 7.31338 19.8508 5.52154 19.8508C3.72971 19.8508 2.27865 18.3463 2.27865 16.4885ZM53.3295 50.1226C53.3295 50.5215 53.0217 50.8407 52.6369 50.8407H9.10521C8.72046 50.8407 8.41266 50.5215 8.41266 50.1226V47.3872C8.41266 46.9883 8.72046 46.6692 9.10521 46.6692H9.52294C9.52294 46.6692 9.52294 46.6692 9.53394 46.6692H52.2082C52.2082 46.6692 52.2082 46.6692 52.2192 46.6692H52.6369C53.0217 46.6692 53.3295 46.9883 53.3295 47.3872V50.1226ZM51.5486 44.3897H10.1935C6.357 36.6963 5.53254 28.2736 5.5875 22.1303C6.36799 22.1303 7.10451 21.9365 7.77508 21.6174L10.3144 25.9029C10.6772 26.5183 11.3148 26.8831 12.0073 26.8831C12.0513 26.8831 12.0953 26.8831 12.1392 26.8831C12.8868 26.8261 13.5353 26.3588 13.8321 25.6521C13.8541 25.6065 13.8761 25.5496 13.8871 25.4926L16.0857 17.2522C16.4045 17.3091 16.7343 17.3547 17.064 17.3547C17.5367 17.3547 17.9874 17.275 18.4272 17.1496L21.3293 25.6179C21.3513 25.6749 21.3732 25.7433 21.4062 25.8003C21.758 26.45 22.4176 26.8489 23.1321 26.8489C23.1541 26.8489 23.1871 26.8489 23.2091 26.8489C23.9566 26.8147 24.6161 26.3588 24.9679 25.561L29.5739 11.8041C29.9916 11.9067 30.4204 11.9865 30.8601 11.9865C31.2998 11.9865 31.7395 11.9181 32.1462 11.8041L36.7852 25.6635C37.104 26.3702 37.7526 26.8261 38.5001 26.8489C38.5221 26.8489 38.5551 26.8489 38.5771 26.8489C39.2916 26.8489 39.9512 26.45 40.3029 25.8003C40.3359 25.7433 40.3579 25.6863 40.3799 25.6293L43.282 17.1724C43.7217 17.2864 44.1614 17.3661 44.6341 17.3661C44.9749 17.3661 45.3047 17.3205 45.6345 17.2636L47.833 25.504C47.833 25.504 47.866 25.6065 47.888 25.6635C48.1848 26.3702 48.8334 26.8489 49.5809 26.8945C49.6249 26.8945 49.6689 26.8945 49.7128 26.8945C50.4054 26.8945 51.043 26.5297 51.4057 25.9143L53.9451 21.6402C54.6156 21.9593 55.3522 22.1417 56.1327 22.1417C56.1876 28.285 55.3632 36.7191 51.5266 44.4011L51.5486 44.3897ZM56.1986 19.8622C54.4068 19.8622 52.9557 18.3577 52.9557 16.4999C52.9557 14.6421 54.4068 13.1377 56.1986 13.1377C57.9904 13.1377 59.4415 14.6421 59.4415 16.4999C59.4415 18.3577 57.9904 19.8622 56.1986 19.8622Z\"            fill=\"white\"></path>          <path            d=\"M33.2469 27.1906C32.6753 26.4156 31.8179 25.9711 30.8725 25.9711C29.9271 25.9711 29.0696 26.4156 28.498 27.1906L24.8484 32.1486C24.0349 33.2541 24.0349 34.7928 24.8484 35.8983L28.498 40.8563C29.0696 41.6313 29.9271 42.0758 30.8725 42.0758C31.8179 42.0758 32.6753 41.6313 33.2469 40.8563L36.8966 35.8983C37.71 34.7928 37.71 33.2541 36.8966 32.1486L33.2469 27.1906ZM35.1377 34.5078L31.4881 39.4658C31.1913 39.8761 30.5427 39.8761 30.2459 39.4658L26.5962 34.5078C26.3874 34.2229 26.3874 33.8126 26.5962 33.5277L30.2459 28.5697C30.3998 28.3646 30.6196 28.2506 30.8725 28.2506C31.1253 28.2506 31.3452 28.3646 31.4991 28.5697L35.1487 33.5277C35.3576 33.8126 35.3576 34.2229 35.1487 34.5078H35.1377Z\"            fill=\"white\"></path>        </g>        <defs>          <clipPath id=\"clip0_1597_1594\">            <rect              width=\"61.56\"              height=\"52.44\"              fill=\"white\"              transform=\"translate(0.0800781 0.679993)\"></rect>          </clipPath>        </defs>      </svg>",
+        
+          "features": [
+            "Trapianto di Capelli FUE Zaffiro",
+            "Analisi Personalizzata dei Capelli",
+            "Esami del Sangue",
+            "Farmaci Post-operatori",
+            "Shampoo e Lozione Speciale",
+            "Primo lavaggio da uno specialista",
+            "Anestesia senza ago",
+            "Estrazione dalla barba se necessario",
+            "Integratori post-operatori per 8 mesi",
+            "3 notti di alloggio al Fairmont Quasar Istanbul*",
+            "Trasferimenti Aeroportuali VIP",
+            "Accompagnatore Personale e Interprete"
+          ],
+          "consultationText": "Ottieni Consulenza Gratuita",
+          "consultationLink": "https://api.whatsapp.com/send?phone=15146044154&text=Ciao%2C%20sono%20interessato%20ai%20vostri%20servizi%20di%20trapianto%20di%20capelli.%20Potete%20darmi%20maggiori%20informazioni%3F"
+        }
+    },
+
+    "comments": "Commenti dai",
+    "ourPatients": "Nostri Pazienti",
+    "reviews": [
+        {
+          "id": 1,
+          "name": "Jake Rose",
+          "date": "21.06.2024",
+          "content": "Sono così sollevato per quanto rapida e indolore sia stata la procedura. Ero nervoso prima di iniziare, ma ora che è finita, mi sento molto più sicuro. È davvero un nuovo capitolo della mia vita."
+        },
+        {
+          "id": 2,
+          "name": "Emily Johnson",
+          "date": "15.06.2024",
+          "content": "Il personale è stato incredibilmente professionale e premuroso. Hanno risposto a tutte le mie domande e mi hanno fatto sentire a mio agio durante l'intero processo. Non potrei essere più felice dei risultati!"
+        },
+        {
+          "id": 3,
+          "name": "Michael Chen",
+          "date": "08.06.2024",
+          "content": "Dopo anni di esitazione, ho finalmente deciso di sottopormi a questa procedura ed è stata la migliore decisione che abbia mai preso. Il team è stato fantastico e i risultati hanno superato le mie aspettative."
+        }
+    ],
+
+    "faqTitle": "FAQ", 
+    "faqItems": [
+        { "question": "Quanto tempo dura una procedura di trapianto di capelli?", "answer": "La procedura dura tipicamente 6-8 ore, a seconda del numero di innesti e della tecnica utilizzata." },
+        { "question": "Quando vedrò i risultati finali del mio trapianto di capelli?", "answer": "I risultati finali sono tipicamente visibili 12-18 mesi dopo la procedura, con miglioramenti notevoli a partire da circa 6 mesi." },
+        { "question": "I risultati del trapianto di capelli sono permanenti?", "answer": "Sì, i risultati del trapianto di capelli sono permanenti." },
+        { "question": "Qual è la differenza tra le tecniche FUE e DHI?", "answer": "FUE comporta l'estrazione e l'impianto individuale dei follicoli piliferi, mentre DHI utilizza uno strumento specializzato per l'impianto diretto senza incisioni pre-fatte." },
+        { "question": "Cosa è incluso nei vostri pacchetti di trapianto di capelli?", "answer": "I nostri pacchetti includono la procedura, l'alloggio in un hotel a 5 stelle, i trasferimenti aeroportuali, i test pre-operatori e i prodotti per la cura post-operatoria." },
+        { "question": "Per quanto tempo devo rimanere a Istanbul per la procedura?", "answer": "Raccomandiamo di rimanere per 2-3 giorni per completare la procedura e il follow-up iniziale." }
+    ],
+    "accentColor": "#131313",
+
+    "footerTitle": "Servire con Eccellenza",
+    "contactTitle": "Informazioni di Contatto",
+    "contaractTitle": "Istituzioni Sanitarie Convenzionate"
+}

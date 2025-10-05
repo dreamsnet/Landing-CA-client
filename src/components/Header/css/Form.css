@@ -1,0 +1,392 @@
+
+ 
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+  }
+  
+  .form-title span:nth-child(1) {
+    color: #0071E3;
+  }
+  
+  .form-title span:nth-child(2) {
+    color: #1D1D1F;;
+  }
+  .form-title span:nth-child(3) {
+    color: #1D1D1F;;
+  }
+  
+  
+  .form-title span:nth-child(4) {
+    color: #0071E3;
+  }
+  
+  .form-title span:nth-child(5) {
+    color: #1D1D1F;
+  }
+
+  
+.form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-label {
+    display: block;
+    /* margin-bottom: 8px; */
+    color: #2c3e50;
+    font-size: 14px;
+  }
+  
+  .container-landing{    
+    /* flex: 1; /*  Geri kalan alanı kaplar*/
+     display: flex;
+     grid-template-columns: 5fr 4fr;  
+     justify-content: center; 
+    flex:1;
+    aspect-ratio: initial;
+   } 
+        
+   .form-container{ 
+     grid-column: 2 / 2;
+     grid-row: 1 / 2; 
+     justify-self: end; 
+   
+     margin-top: 40px;
+   }
+   
+   .form-container {
+     width: 100%;
+     padding: 35px 40px 30px;
+     border-radius: 20px;
+     background: var(--first-form-linear);
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     border:1px solid #e0e0e0;
+     /* font-family: Arial, sans-serif; */
+   }
+ 
+   .form-title {
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 28px;
+     font-weight: bold;
+   }
+   
+   .form-title span:nth-child(1) {
+     color: #0071E3;
+   }
+   
+   .form-title span:nth-child(2) {
+     color: #1D1D1F;
+   }
+   .form-title span:nth-child(3) {
+     color: #1D1D1F;
+   }
+   
+   
+   .form-title span:nth-child(4) {
+     color: #0071E3;
+   }
+   
+   .form-title span:nth-child(5) {
+     color: #071F42;
+   }
+   
+   .form-group {
+     margin-bottom: 10px;
+   }
+   
+   .form-label {
+     display: block;
+     /* margin-bottom: 8px; */
+     color: #2c3e50;
+     font-size: 14px;
+   }
+   
+   .form-container .form-input {
+     width: 100%;
+     padding: 15px 0;
+     font-size: 24px;
+     box-sizing: border-box;
+     text-align: center;
+     border-radius: 0.5rem;
+     border: none;
+   }
+   .phone-input {
+     display: flex;
+     align-items: center;
+     background: white;
+     border: 1px solid #e0e0e0;
+     border-radius: 5px;
+     padding: 15px;
+     
+   }
+   
+   .country-flag {
+     display: flex;
+     align-items: center;
+     padding: 0 10px;
+     border-right: 1px solid #e0e0e0;
+   }
+   
+   .flag-img {
+     width: 25px;
+     height: 16px;
+     margin-right: 5px;
+   }
+   
+   .phone-number {
+     flex: 1;
+     border: none;
+     padding: 0 15px;
+     font-size: 16px;
+     outline: none;
+     width: 100%;
+   }
+   
+   .submit-btn {
+     width: 100%;
+     padding: 10px 15px;
+     background: linear-gradient(90deg, #0071E3 1.6%, #8DC1F6 100%); 
+
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     font-size: 25px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: background-color 0.3s;
+   }
+   .submit-btn:hover {
+    background: linear-gradient(90deg, #0071E3 1.6%, #8DC1F6 100%);
+   }
+   
+   .trustable {
+     display: flex;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 10px;
+     grid-column: 1/2;
+     grid-row: 2/2;
+     margin-top: 10px;
+     right: 45px;
+     position: absolute;
+     bottom:70px; 
+     justify-content: end;
+   
+    
+   }
+   .trustable img{
+   height: 40.64px;
+   display: block;
+   }
+   .trustable img.mobile{
+    display: none;
+  }
+   .form-doctor-prog{
+   padding: 0 50px;
+   }
+   #progress-bar-container {
+     width: 100%;
+     background-color: #e0e0e0;
+     border-radius: 25px;
+     margin-top: 10px;
+   }
+   
+   #progress-bar {
+     width: 0%;
+     height: 5px;
+     background-color: #0071E3;
+     border-radius: 25px;
+     transition: width 0.4s ease;
+   }
+  
+   .upload-container { 
+    margin: 0 auto;
+  }
+  .upload-container svg {
+    fill: #fff !important;
+}
+
+  .upload-label {
+    display: block; /* Changed to block */
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .upload-button {
+    background: #fff;
+    color:  #000;
+    padding: 12px;
+    border-radius: 25px;
+    border: none; 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+  
+  .upload-button:active {
+    background: #0071E3;
+    color:#fff;
+  }
+  
+  .upload-icon {
+    flex-shrink: 0;
+  }
+  input[type="file"] {
+    display: none;
+  }
+
+  .step-radio label{
+    display: flex;
+    justify-content: left;
+    gap: 10px; 
+    flex-direction: row;
+  }
+
+  .form ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  .form p {
+    margin: 0;
+  }
+
+  .privacy{
+    text-align: center;
+  }
+
+
+  .header-container .right-container .form-container {
+    
+    border-radius: 28.737px;
+border: 1.916px solid #FFF;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0.02) 100%);
+backdrop-filter: blur(7.375708103179932px);
+ width: 70%;
+flex-shrink: 0;
+}
+   
+.header-container .right-container .form-container .phone-number, .header-container .right-container .form-container .iti .iti__selected-dial-code{
+  font-size: 16px;
+  left:20px;
+}
+
+.header-container .right-container .form-container .submit-btn {
+  font-size: 18px;
+  left:20px;
+}
+
+
+.alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 15px 20px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999;
+  text-align:center;
+}
+
+.alert.success {
+  background-color: #4caf50;
+}
+
+.alert.danger {
+  background-color: #f44336;
+}
+.alert.processing {
+  background-color: #ffc107;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left:20px;
+}
+
+
+  /* Mobil cihazlar */
+@media (max-width: 767px) { 
+    
+    .header-container .right-container .form-container{
+      width: 90%;
+      padding: 20px 15px;
+      margin: 0 auto;
+      margin-top: -10px;
+    }
+
+    .trustable {
+     position: static; 
+    }
+    
+    .trustable img{
+      display: none;
+    }
+    
+    .trustable img.mobile{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .form-title{
+      font-size: 18px;
+      gap: 3px;
+      margin-bottom: 15px;
+    }
+
+    .form-container{  
+      margin-top: 0;
+    }
+    
+    .form-label{
+      display: none;
+    }
+    
+    .form-label.show-mobile{
+      display: block;
+    }
+    
+    .form-container .form-input { 
+      font-size: 16px;
+      padding: 12px 0;
+    }
+    
+    .submit-btn{
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+    
+    .phone-number{
+      font-size: 16px;
+    }
+    
+    .form-group {
+      margin-bottom: 8px;
+    }
+ }
+
+/* Tabletler */
+@media (min-width: 768px) and (max-width: 1023px) {   }
+
+/* Küçük masaüstü */
+@media (min-width: 1024px) and (max-width: 1439px) {   }
+
+/* Büyük masaüstü */
+@media (min-width: 1440px) {  }

@@ -1,0 +1,237 @@
+---
+import "./css/Services.css";
+const { t } = Astro.props;
+const whatsappUrl = `https://api.whatsapp.com/send?phone=${t.wpNumber}&text=${encodeURIComponent(t.wpMessage)}`;
+---
+
+<div class="services">
+  <div class="services-header">
+    <h2>{t.ourServices}</h2>
+    <h3>{t.premiumSolutions}</h3>
+    <div class="services-button-wrapper">
+      <div class="services-button-container" id="services-all">
+        <div class="services-button" data-target="dhi">
+          <div class="button-icon"></div>
+          <div class="button-text">{t.dhiHairTransplant}</div>
+        </div>
+        <div class="services-button active" data-target="sapphire">
+          <div class="button-icon"></div>
+          <div class="button-text">{t.sapphireHairTransplant}</div>
+        </div>
+        <div class="services-button" data-target="hybrid">
+          <div class="button-icon"></div>
+          <div class="button-text">{t.hybridHairTransplant}</div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-details">
+    <div class="service-detail" id="dhi-detail">
+      <h3>{t.dhiHairTransplant}</h3>
+      <p>
+        {t.dhiText}
+        <br /><br />
+        {t.dhiText2}
+      </p>
+
+      <div class="advantages">
+        <div class="advantage">
+          <img loading="lazy" src="/Services/DHI.webp" alt="hair" />
+        </div>
+
+        <div class="advantage">
+          <h4>{t.advantages}</h4>
+          <ul>
+            <li>{t.highestGraft}</li>
+            <li>{t.noShave}</li>
+            <li>{t.invisibleScarring}</li>
+          </ul>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="more-info-button wp-link">{t.freeDHICons}</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="service-detail active" id="sapphire-detail">
+      <h3>{t.sapphireHairTransplant}</h3>
+      <p>
+        {t.fueText}
+        <br /><br />
+        {t.fueText2}
+      </p>
+
+      <div class="advantages">
+        <div class="advantage">
+          <img loading="lazy" src="/Services/Sapphire.webp" alt="hair" />
+        </div>
+
+        <div class="advantage">
+          <h4>{t.advantages}</h4>
+          <ul>
+            <li>{t.natural}</li>
+            <li>{t.invisibleScarring}</li>
+            <li>{t.custom}</li>
+          </ul>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="more-info-button wp-link">{t.freeFUECons}</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="service-detail" id="hybrid-detail">
+      <h3>{t.hybridHairTransplant}</h3>
+      <p>
+        {t.hybridText}
+        <br /><br />
+        {t.hybridText2}
+      </p>
+
+      <div class="advantages">
+        <div class="advantage">
+          <img loading="lazy" src="/Services/Sapphire.webp" alt="hair" />
+        </div>
+
+        <div class="advantage">
+          <h4>{t.advantages}</h4>
+          <ul>
+            <li>{t.maximumDensity}</li>
+            <li>{t.invisibleScarring}</li>
+            <li>{t.customPlacement}</li>
+          </ul>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="more-info-button wp-link">{t.freeHybridCons}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get the button container
+    const buttonContainer = document.getElementById("services-all");
+    if (!buttonContainer) return;
+
+    // Get all buttons and service details
+    const buttons = document.querySelectorAll(".services-button");
+    const serviceDetails = document.querySelectorAll(".service-detail");
+
+    // Find the active button
+    const activeButton = document.querySelector(".services-button.active");
+
+    // Center the active button on page load
+    if (activeButton && window.innerWidth < 768) {
+      setTimeout(() => {
+        centerButton(activeButton, buttonContainer);
+      }, 100); // Small delay to ensure DOM is fully rendered
+    }
+
+    // Function to center a button in its container
+    function centerButton(button, container) {
+      if (!button || !container) return;
+
+      try {
+        const buttonRect = button.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+
+        // Calculate the scroll position to center the button
+        const scrollLeft =
+          (button as HTMLElement).offsetLeft -
+          containerRect.width / 2 +
+          buttonRect.width / 2;
+
+        // Scroll with smooth animation
+        container.scrollTo({
+          left: scrollLeft,
+          behavior: "smooth",
+        });
+      } catch (error) {
+        console.error("Error centering button:", error);
+      }
+    }
+
+    // Add click event listeners to all buttons
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        try {
+          // Remove active class from all buttons
+          buttons.forEach((btn) => btn.classList.remove("active"));
+
+          // Add active class to clicked button
+          button.classList.add("active");
+
+          // Hide all service details
+          serviceDetails.forEach((detail) => detail.classList.remove("active"));
+
+          // Show the corresponding service detail
+          const targetId = button.getAttribute("data-target") + "-detail";
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.classList.add("active");
+          }
+
+          // Center the button on mobile devices
+          if (window.innerWidth < 768) {
+            centerButton(button, buttonContainer);
+          }
+
+          // Update scroll indicator for mobile
+          const scrollIndicator = document.querySelectorAll(
+            ".scroll-indicator span"
+          );
+          if (scrollIndicator.length > 0) {
+            const index = Array.from(buttons).indexOf(button);
+            scrollIndicator.forEach((dot, i) => {
+              if (i === index) {
+                (dot as HTMLElement).style.backgroundColor = "#0071E3";
+              } else {
+                (dot as HTMLElement).style.backgroundColor = "#D1D5DB";
+              }
+            });
+          }
+        } catch (error) {
+          console.error("Error handling button click:", error);
+        }
+      });
+    });
+
+    // Handle window resize to ensure buttons stay centered on mobile
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 768) {
+        const activeButton = document.querySelector(".services-button.active");
+        if (activeButton) {
+          centerButton(activeButton, buttonContainer);
+        }
+      }
+    });
+  });
+</script>
+
+<style>
+  /* Add this to your Services.css or include it here */
+  .service-detail {
+    display: none;
+  }
+
+  .service-detail.active {
+    display: flex;
+  }
+</style>

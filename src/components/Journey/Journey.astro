@@ -1,0 +1,76 @@
+---
+import "./css/Journey.css";
+const { t } = Astro.props;
+---
+
+<div class="journey">
+  <div class="journey-header">
+    <h2>{t.yourJourney}</h2>
+    <h3>{t.inTurkey}</h3>
+  </div>
+
+  <img loading="lazy" src="/Journey/journey-banner.webp" alt="Your Journey in Turkey" />
+
+  <div class="journey-container">
+    <div class="journey-item">
+      <div class="journey-header">
+        <h2>{t.freeConsultationJ}</h2>
+        <span>👨‍⚕️</span>
+      </div>
+
+      <p>
+        {t.FreeConsultationText}
+      </p>
+    </div>
+
+    <div class="journey-item">
+      <div class="journey-header">
+        <h2>{t.easyApp}</h2>
+        <span>📅</span>
+      </div>
+      <p>
+        {t.easyAppText}
+      </p>
+    </div>
+
+    <div class="journey-item">
+      <div class="journey-header">
+        <h2> {t.vipTransfer}</h2>
+        <span>🚘</span>
+      </div>
+      <p>
+        {t.vipTransferText}
+      </p>
+    </div>
+
+    <div class="journey-item">
+      <div class="journey-header">
+        <h2>{t.operation}</h2>
+        <span>💉</span>
+      </div>
+      <p>
+        {t.operationText}
+      </p>
+    </div>
+
+    <div class="journey-item">
+      <div class="journey-header">
+        <h2>{t.luxHotel}</h2>
+        <span>🏨</span>
+      </div>
+      <p>
+        {t.luxHotelText}
+      </p>
+    </div>
+
+    <div class="journey-item">
+      <div class="journey-header">
+        <h2>{t.Aftercare}</h2>
+        <span>🩺</span>
+      </div>
+      <p>
+        {t.aftercareText}
+      </p>
+    </div>
+  </div>
+</div>

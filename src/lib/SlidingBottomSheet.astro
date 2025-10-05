@@ -1,0 +1,533 @@
+---
+// SlidingBottomSheet.astro
+// Define props with defaults and types
+const { t } = Astro.props;
+
+// In Astro, we'll use server-side props instead of state
+const wpNumber = t.wpNumber;
+const wpMessage = t.wpMessage;
+---
+
+<!-- Enhanced Sliding Bottom Sheet - Only visible on mobile devices -->
+<div id="slidingSheet" class="sliding-sheet">
+  <div class="grid-layout">
+    <!-- Regular full-width buttons -->
+    <div class="regular-buttons">
+      <div id="discountBtn" class="contact-btn discount-btn">
+        <div class="btn-inner">
+          <div class="icon-container">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 44 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_265_1358)">
+                <path
+                  d="M31.5208 27.7495L37.3934 33.7495V27.7495C40.6379 27.7495 43.2659 25.0645 43.2659 21.7495V6.74951C43.2659 3.43451 40.6379 0.749512 37.3934 0.749512H22.712C19.4674 0.749512 16.8395 3.43451 16.8395 6.74951V9.74951L13.9032 17.2495H16.8395V21.7495C16.8395 21.7495 20.5979 21.7495 21.9779 20.9995C21.9779 24.0895 17.6469 24.7495 17.6469 24.7495C18.66 26.5345 20.5392 27.7495 22.712 27.7495H24.9142"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path
+                  d="M20.5098 5.24951H22.756C26.0006 5.24951 28.6286 7.93451 28.6286 11.2495V26.2495C28.6286 29.5645 26.0006 32.2495 22.756 32.2495H13.9472L8.07468 38.2495V32.2495H6.60655C3.36197 32.2495 0.734009 29.5645 0.734009 26.2495V11.2495C0.734009 7.93451 3.36197 5.24951 6.60655 5.24951H13.9472"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path
+                  d="M20.1427 10.4995C20.3189 10.0945 20.6419 9.74951 21.2438 9.74951C21.8457 9.74951 22.1687 10.0945 22.3449 10.4995"
+                  fill="white"></path>
+                <path
+                  d="M20.1427 10.4995C20.3189 10.0945 20.6419 9.74951 21.2438 9.74951C21.8457 9.74951 22.1687 10.0945 22.3449 10.4995"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path
+                  d="M6.41565 26.2495H6.56246"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path
+                  d="M9.35193 26.2495H9.49874"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path
+                  d="M12.2882 26.2495H12.435"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_265_1358">
+                  <rect
+                    width="44"
+                    height="39"
+                    fill="white"
+                    transform="translate(0 -0.000488281)"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <span class="btn-text">Get 10% Discount</span>
+        </div>
+      </div>
+      <a
+        href={`https://api.whatsapp.com/send?phone=${wpNumber}&text=${encodeURIComponent(wpMessage)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-btn whatsapp-btn wp-link"
+      >
+        <div class="btn-inner">
+          <div class="icon-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="white"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.151 1.602 5.947L.045 24l6.268-1.621C8.017 23.448 9.987 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.951c-1.83 0-3.594-.494-5.13-1.43l-.367-.217-3.722.963.988-3.576-.237-.386A9.914 9.914 0 0 1 2.049 12c0-5.465 4.451-9.914 9.913-9.914 5.465 0 9.914 4.449 9.914 9.914 0 5.465-4.451 9.914-9.914 9.914z"
+              ></path>
+              <path
+                d="M17.466 14.798c-.242-.12-1.427-.705-1.647-.784-.22-.081-.38-.12-.538.12-.161.242-.617.784-.756.944-.14.16-.28.18-.522.06a8.055 8.055 0 0 1-2.346-1.445 8.283 8.283 0 0 1-1.544-1.885c-.161-.281-.017-.432.121-.552.123-.115.242-.28.363-.42.12-.14.16-.241.242-.402.08-.16.04-.302-.02-.422-.062-.12-.537-1.29-.735-1.763-.197-.472-.395-.41-.537-.418-.14-.008-.3-.008-.46-.008-.161 0-.422.06-.643.281-.221.22-.84.82-.84 2.001 0 1.18.86 2.321.982 2.481.121.161 1.693 2.6 4.104 3.648.574.248 1.02.397 1.368.509a3.368 3.368 0 0 0 1.353.095c.413-.06 1.27-.518 1.453-1.018.181-.5.181-.934.12-1.02-.06-.081-.22-.14-.462-.26z"
+              ></path>
+            </svg>
+          </div>
+          <span class="btn-text">WhatsApp</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Minimized circular buttons -->
+    <div class="mini-buttons">
+      <div id="miniDiscountBtn" class="mini-btn discount-mini">
+        <span>10%</span>
+      </div>
+      <a
+        href={`https://api.whatsapp.com/send?phone=${wpNumber}&text=${encodeURIComponent(wpMessage)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mini-btn whatsapp-mini wp-link"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="white"
+          width="22"
+          height="22"
+        >
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.151 1.602 5.947L.045 24l6.268-1.621C8.017 23.448 9.987 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.951c-1.83 0-3.594-.494-5.13-1.43l-.367-.217-3.722.963.988-3.576-.237-.386A9.914 9.914 0 0 1 2.049 12c0-5.465 4.451-9.914 9.913-9.914 5.465 0 9.914 4.449 9.914 9.914 0 5.465-4.451 9.914-9.914 9.914z"
+          ></path>
+          <path
+            d="M17.466 14.798c-.242-.12-1.427-.705-1.647-.784-.22-.081-.38-.12-.538.12-.161.242-.617.784-.756.944-.14.16-.28.18-.522.06a8.055 8.055 0 0 1-2.346-1.445 8.283 8.283 0 0 1-1.544-1.885c-.161-.281-.017-.432.121-.552.123-.115.242-.28.363-.42.12-.14.16-.241.242-.402.08-.16.04-.302-.02-.422-.062-.12-.537-1.29-.735-1.763-.197-.472-.395-.41-.537-.418-.14-.008-.3-.008-.46-.008-.161 0-.422.06-.643.281-.221.22-.84.82-.84 2.001 0 1.18.86 2.321.982 2.481.121.161 1.693 2.6 4.104 3.648.574.248 1.02.397 1.368.509a3.368 3.368 0 0 0 1.353.095c.413-.06 1.27-.518 1.453-1.018.181-.5.181-.934.12-1.02-.06-.081-.22-.14-.462-.26z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .sliding-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: 99999999;
+    text-align: center;
+    pointer-events: none; /* Allow clicks to pass through the container */
+    display: none; /* Hide by default on all devices */
+  }
+
+  .grid-layout {
+    position: relative;
+    height: 50px;
+    width: 100%;
+  }
+
+  /* Regular buttons styling */
+  .regular-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+
+  .regular-buttons.hidden {
+    transform: translateY(100%); /* Slide down and out of view */
+  }
+
+  .contact-btn {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.4s ease;
+    text-decoration: none;
+    pointer-events: auto;
+    overflow: hidden;
+  }
+
+  .discount-btn {
+    background: linear-gradient(135deg, #0071e3, #40a9ff);
+  }
+
+  .whatsapp-btn {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+  }
+
+  .btn-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Shine effect for regular buttons */
+  .contact-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
+
+  .contact-btn:hover::after {
+    left: 150%;
+  }
+
+  /* Mini buttons styling */
+  .mini-buttons {
+    position: fixed;
+    bottom: 0px; /* Align with the bottom edge as requested */
+    left: 0;
+    width: 100%;
+    height: 50px; /* Explicit height to ensure buttons are fully visible */
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 99999999; /* Ensure buttons appear above everything */
+  }
+
+  .mini-buttons.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mini-btn {
+    width: 65px;
+    height: 50px; /* Match regular button height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600; /* Match regular button font weight */
+    font-size: 14px; /* Match regular button font size */
+    text-decoration: none;
+    transition:
+      transform 0.4s ease,
+      opacity 0.4s ease;
+    z-index: 999999999; /* Very high z-index to ensure visibility */
+    position: absolute;
+  }
+
+  /* Half-circle discount button */
+  .discount-mini {
+    background: linear-gradient(
+      135deg,
+      #0071e3,
+      #40a9ff
+    ); /* Match regular button gradient */
+    padding: 0; /* Remove padding */
+    left: 0; /* Left edge of screen */
+    width: 40px; /* Even smaller width */
+    height: 50px; /* Match height with regular buttons */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); /* Softer shadow to match */
+    border-radius: 0; /* No rounded corners */
+    border-top-right-radius: 25px; /* Round top right corner */
+    border-bottom-right-radius: 25px; /* Round bottom right corner */
+    transform: none; /* No transform needed */
+    cursor: pointer;
+  }
+
+  /* Half-circle WhatsApp button */
+  .whatsapp-mini {
+    background: linear-gradient(
+      135deg,
+      #25d366,
+      #128c7e
+    ); /* Match regular button gradient */
+    padding: 0; /* Remove padding */
+    right: 0; /* Right edge of screen */
+    width: 40px; /* Even smaller width */
+    height: 50px; /* Match height with regular buttons */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); /* Softer shadow to match */
+    border-radius: 0; /* No rounded corners */
+    border-top-left-radius: 25px; /* Round top left corner */
+    border-bottom-left-radius: 25px; /* Round bottom left corner */
+    transform: none; /* No transform needed */
+  }
+
+  /* Display adjustments for mini buttons */
+  .discount-mini {
+    justify-content: center; /* Center content */
+    transform: translateX(-70%); /* Initial position off-screen */
+  }
+
+  .whatsapp-mini {
+    justify-content: center; /* Center content */
+    transform: translateX(70%); /* Initial position off-screen */
+  }
+
+  /* When visible, slide from off-screen to on-screen */
+  .mini-buttons.visible .discount-mini {
+    transform: translateX(0); /* Slide in from left */
+  }
+
+  .mini-buttons.visible .whatsapp-mini {
+    transform: translateX(0); /* Slide in from right */
+  }
+
+  /* Animation removed as requested */
+
+  /* State where regular buttons are sliding out */
+  .regular-buttons.slide-out .discount-btn {
+    transform: translateX(-100%);
+  }
+
+  .regular-buttons.slide-out .whatsapp-btn {
+    transform: translateX(100%);
+  }
+
+  /* Only show on mobile devices */
+  @media (max-width: 768px) {
+    .sliding-sheet {
+      display: block; /* Show on mobile */
+    }
+  }
+</style>
+
+<script>
+  // Declare the global function type
+  declare global {
+    interface Window {
+      showFormPopup: () => void;
+    }
+  }
+
+  // Client-side JavaScript
+  document.addEventListener("DOMContentLoaded", () => {
+    // Check if we're on mobile
+    const isMobile = window.innerWidth <= 768;
+
+    // Only initialize on mobile devices
+    if (!isMobile) return;
+
+    const slidingSheet = document.getElementById(
+      "slidingSheet"
+    ) as HTMLElement | null;
+    const regularButtons = document.querySelector(
+      ".regular-buttons"
+    ) as HTMLElement | null;
+    const miniButtons = document.querySelector(
+      ".mini-buttons"
+    ) as HTMLElement | null;
+    const discountBtn = document.getElementById(
+      "discountBtn"
+    ) as HTMLElement | null;
+    const miniDiscountBtn = document.getElementById(
+      "miniDiscountBtn"
+    ) as HTMLElement | null;
+
+    // Control flag to prevent multiple animations from running simultaneously
+    let isTransitioning = false;
+
+    // Function to show the full buttons
+    const showFullButtons = () => {
+      if (!regularButtons || !miniButtons || isTransitioning) return;
+
+      // Set transition flag
+      isTransitioning = true;
+
+      // First hide the mini buttons
+      miniButtons.classList.remove("visible");
+
+      // Only after mini buttons have faded out, show regular buttons
+      setTimeout(() => {
+        regularButtons.classList.remove("slide-out");
+
+        // Reset transition flag after animation completes
+        setTimeout(() => {
+          isTransitioning = false;
+        }, 400);
+      }, 400); // Give time for mini buttons to fade out
+    };
+
+    // Function to hide the full buttons and show mini buttons
+    const showMiniButtons = () => {
+      if (!regularButtons || !miniButtons || isTransitioning) return;
+
+      // Set transition flag
+      isTransitioning = true;
+
+      // First slide out the regular buttons
+      regularButtons.classList.add("slide-out");
+
+      // Only after regular buttons have slid out, show mini buttons
+      setTimeout(() => {
+        miniButtons.classList.add("visible");
+
+        // Reset transition flag after animation completes
+        setTimeout(() => {
+          isTransitioning = false;
+        }, 400);
+      }, 400); // Full duration of regular buttons slide-out
+    };
+
+    // Setup click event for discount button
+    if (discountBtn) {
+      discountBtn.addEventListener("click", (e) => {
+        // Prevent default behavior
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Show form popup
+        if (typeof window.showFormPopup === "function") {
+          window.showFormPopup();
+        }
+      });
+    }
+
+    // Setup click event for mini discount button
+    if (miniDiscountBtn) {
+      miniDiscountBtn.addEventListener("click", (e) => {
+        // Prevent default behavior
+        e.preventDefault();
+        e.stopPropagation();
+
+        // First show the full buttons
+        showFullButtons();
+
+        // Then show form popup after the animation completes
+        setTimeout(() => {
+          if (typeof window.showFormPopup === "function") {
+            window.showFormPopup();
+          }
+        }, 400);
+      });
+    }
+
+    // Start with regular buttons visible, no automatic minimizing
+    if (regularButtons) {
+      regularButtons.classList.remove("slide-out");
+    }
+
+    // Make sure mini buttons are hidden initially
+    if (miniButtons) {
+      miniButtons.classList.remove("visible");
+    }
+
+    // Variables for scroll handling
+    let lastScrollTop = 0;
+    let scrollTimer: ReturnType<typeof setTimeout> | null = null;
+    let scrollDownDebounceTimer: ReturnType<typeof setTimeout> | null = null;
+    let scrollUpDebounceTimer: ReturnType<typeof setTimeout> | null = null;
+    let isScrollingDown = false;
+    let isScrollingUp = false;
+    const SCROLL_THRESHOLD = 300; // Pixels to scroll before taking action
+    const SCROLL_UP_DEBOUNCE = 1000; // 1 second delay when scrolling up
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        const currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        // Clear any existing inactivity timer when user scrolls
+        if (scrollTimer) {
+          clearTimeout(scrollTimer);
+        }
+
+        // Determine scroll direction
+        if (currentScroll > lastScrollTop + 10) {
+          // Adding small buffer for micro-movements
+          isScrollingDown = true;
+          isScrollingUp = false;
+
+          // Clear any pending scroll up timer
+          if (scrollUpDebounceTimer) {
+            clearTimeout(scrollUpDebounceTimer);
+          }
+
+          // Immediately minimize on scroll down (no debounce)
+          if (currentScroll > SCROLL_THRESHOLD && !isTransitioning) {
+            showMiniButtons();
+          }
+        } else if (currentScroll < lastScrollTop - 10) {
+          isScrollingDown = false;
+          isScrollingUp = true;
+
+          // Clear any pending scroll down actions
+          if (scrollDownDebounceTimer) {
+            clearTimeout(scrollDownDebounceTimer);
+          }
+
+          // Debounce scroll up action with 1 second delay
+          if (scrollUpDebounceTimer) {
+            clearTimeout(scrollUpDebounceTimer);
+          }
+
+          scrollUpDebounceTimer = setTimeout(() => {
+            if (isScrollingUp && !isTransitioning) {
+              showFullButtons();
+            }
+          }, SCROLL_UP_DEBOUNCE);
+        }
+
+        // Update last scroll position
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+
+        // Set timer to show the full buttons after 2 seconds of no scrolling
+        scrollTimer = setTimeout(() => {
+          if (!isTransitioning) {
+            showFullButtons();
+          }
+        }, 2000);
+      },
+      { passive: true }
+    );
+
+    // Handle window resize
+    window.addEventListener("resize", () => {
+      const isMobile = window.innerWidth <= 768;
+      if (slidingSheet) {
+        slidingSheet.style.display = isMobile ? "block" : "none";
+      }
+    });
+  });
+</script>

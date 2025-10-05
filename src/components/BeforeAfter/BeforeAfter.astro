@@ -1,0 +1,103 @@
+
+---
+import NicSlider from '../Stories/NicSlider.jsx'
+import './css/BeforeAfter.css'
+const { t } = Astro.props;
+ 
+---
+<div class="beforeAfter">
+    <div class="beforeAfter-header">
+        <h2>{t.resultsTitle}</h2>
+        <h3>{t.beforeTitle}</h3>
+        <div class="beforeAfter-button-container">
+            <div class="beforeAfter-button active" data-target="sapphire-ba">
+                <div class="button-icon"></div>
+                <div class="button-text">{t.sapphireHairTransplant}</div>
+            </div>
+
+            <div class="beforeAfter-button" data-target="dhi-ba">
+                <div class="button-icon"></div>
+                <div class="button-text">{t.dhiHairTransplant}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="beforeAfter-details">
+        <div class="beforeAfter-item" id="dhi-ba-detail">
+            <NicSlider client:visible     
+            videos={t.dhiVideos} 
+            showWatchingLabel={false} 
+            showPlayButton={false}
+            showOverlay={false} 
+            showContent={false}  
+            imageShape={'square'}
+            imageWidth={400}
+            imageHeight={250}
+            objectFit={'cover'}
+            />
+        </div>
+
+        <div class="beforeAfter-item active" id="sapphire-ba-detail">
+            <NicSlider client:visible 
+            videos={t.sapphireVideos} 
+            showWatchingLabel={false} 
+            showPlayButton={false} 
+            showOverlay={false} 
+            showContent={false}   
+            imageShape={'square'}
+            imageWidth={400}
+            imageHeight={250}
+            objectFit={'cover'}
+            />
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('.beforeAfter-button');
+        const serviceDetails = document.querySelectorAll('.beforeAfter-item');
+ 
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                buttons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Hide all service details
+                serviceDetails.forEach(detail => detail.classList.remove('active'));
+                
+                // Show the corresponding service detail
+                const targetId = button.getAttribute('data-target') + '-detail';
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.classList.add('active');
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    /* Add this to your Services.css or include it here */
+    .beforeAfter-item {
+      visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    }
+    
+   
+    .beforeAfter-item.active {
+      visibility: visible;
+    position: static; /* Or whatever position value you need */
+    height: auto;
+    }
+</style>

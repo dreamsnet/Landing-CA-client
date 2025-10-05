@@ -1,0 +1,139 @@
+.CareForYou{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    padding: 30px 40px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+}
+
+.CareForYou .text-content {
+    margin-bottom: 10px;
+    max-width: 800px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.CareForYou h1{
+    color: #1D1D1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.CareForYou h2{
+    color: #1D1D1F;
+    text-align: center; 
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(135deg, #071F42 0%, #0071E3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.CareForYou h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #0071E3, #40A9FF);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.CareForYou p{
+    color: #4B5563;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 156%;
+    margin-bottom: 0;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.2px;
+    padding: 0 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobil cihazlar */
+@media (max-width: 767px) { 
+    .CareForYou{ 
+        padding: 20px 0; 
+        width: 100%;
+    }
+    .CareForYou h2{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .CareForYou h1{
+        font-size: 28px;
+        margin: 15px 0 5px;
+    }
+    .CareForYou .text-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .CareForYou p{ 
+        font-size: 14px; 
+        padding: 0 15px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .CareForYou h2::after {
+        width: 60px;
+        margin: 10px auto 0;
+    }
+    
+    /* Fix for Chrome on iOS */
+    @supports (-webkit-touch-callout: none) {
+        .CareForYou {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+/* Tabletler */
+@media (min-width: 768px) and (max-width: 1023px) {  }
+
+/* Küçük masaüstü */
+@media (min-width: 1024px) and (max-width: 1439px) {  }
+
+/* Büyük masaüstü */
+@media (min-width: 1440px) {  }

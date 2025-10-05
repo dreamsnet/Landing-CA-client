@@ -1,0 +1,441 @@
+.packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px 0 0;
+    background: #F5F5F7;
+}
+
+.packages h2 { 
+    text-align: center;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; 
+    margin: 0;
+    background: linear-gradient(180deg, #0071E3 13.64%, #8DC1F6 131.82%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.packages p {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 21.92px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128%;
+    letter-spacing: 0.877px;
+}
+
+.packages-container {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+    /* overflow hidden sadece x ekseni için uygulansın */
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding-top: 50px; /* Header'ın margin-top eksi değeri için alan aç */
+    
+}
+
+.packages-container.single-package {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.packages-container.single-package .package-card {
+    max-width: 100%;
+    width: 100%;
+}
+
+.packages-slider {
+    display: flex; 
+    gap: 20px;
+    width: 100%; 
+    max-width: 1200px;
+    transition: transform 0.4s ease;
+     
+}
+
+.package-card { 
+    border-radius: 43.758px;
+    border: 0.254px solid #0071E3;
+    background: #FFF; 
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    flex: 1;
+    max-width: 380px;
+    margin-top: 50px; /* Header'ın eksi margin-top değerini dengelemek için */
+     
+}
+
+.package-header {
+    background-color: #0074e4;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 0;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 50%;
+    align-self: center;
+    position: absolute; /* Absolute ile konumlandır */
+    top: -60px; /* Eksi margin yerine top kullan */
+    left: 50%;
+    transform: translateX(-50%); /* Ortalamak için */
+}
+
+.icon { 
+}
+
+.package-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.package-content { 
+    margin-top: 50px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.check-icon {
+    color: #0074e4;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.feature-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.consultation-btn {
+    background-color: #0074e4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 15px;
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.consultation-btn:hover {
+    background-color: #0062c1;
+    color: white;
+    text-decoration: none;
+}
+
+.popular-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: right; 
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.package-banner {
+    background-image: url("/Journey/banner.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    margin-top: 100px; 
+    padding: 40px 0 80px 0;
+    position: relative; /* Pozisyon ayarı */
+    min-height: 250px;
+}
+
+.package-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Siyah renk, 0.6 opaklıkla */
+    z-index: 1; /* Arka plandan daha yüksek, içerikten daha düşük */
+}
+
+
+/* Banner içeriğinin üstte görünmesi için */
+.package-banner * {
+    position: relative;
+    z-index: 2; /* Overlay'in üzerinde görünsün */
+}
+.package-banner h3 {
+    background: transparent;
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 63.394px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 139%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.package-banner p {
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139%;
+    padding: 0 100px;
+}
+
+.package-banner button,
+.package-banner a.consultation-btn {
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 51.25px;
+    background: #0071E3; 
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: 0.308px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.package-banner a.consultation-btn:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.package-buttons {
+    display: none;
+}
+
+.package-btn {
+    padding: 10px 20px; 
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #0071E3;
+    gap: 5px; 
+    border-radius: 20px;
+    border: 1px solid #0071E3;
+    background-color: white;
+}
+
+.package-btn.active {
+    background-color: #0071E3;
+    color: white;
+    border-color: #0071E3;
+}
+
+.package-btn:hover:not(.active) {
+    background-color: #fff;
+}
+
+.package-btn svg path {
+    fill: #0071E3;
+}
+
+.package-btn.active svg path {
+    fill: #fff;
+}
+
+/* Slider dots */
+.slider-dots {
+    display: none;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d0d0d0;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #0071E3;
+}
+
+/* Mobil cihazlar */
+@media (max-width: 767px) { 
+    
+    .package-banner {
+        background-position: center;
+        min-height: 250px;
+        padding: 40px 0 45px 0;
+        background-image: url("/Journey/mobile-banner.webp");
+        justify-content: center;
+        align-items: center;
+    }
+    .packages h2 {
+        font-size: 30px;
+    }
+    
+    .packages p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    
+    .packages-container {
+        margin-top: 0;
+        padding-top: 0; /* Mobilde daha az üst boşluk */
+        width: 90%;
+    }
+    
+    .packages-slider {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+    
+    .package-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 40px 0 0 0; /* Üst boşluk eklendi */
+    }
+    
+    .package-header {
+        top: 0; /* Mobilde header'ı daha yukarıda konumlandır */
+        background-color: transparent;
+        color: #000;
+        position: relative;
+        width: 100%; 
+    }
+    .package-header .icon{
+        display: none;
+    }
+    .package-header .package-name{
+        color: #1D1D1F;
+text-align: center; 
+font-size: 24.652px;
+font-style: normal;
+font-weight: 700; 
+text-transform: uppercase;
+    }
+    .package-content { 
+        margin-top: 0;
+    }
+    
+    .package-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .slider-dots {
+        display: flex;
+    }
+    
+    .popular-tag {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .package-banner h3 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    
+    .package-banner p {
+        font-size: 12px;
+        /* padding: 0 25px; */
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+  
+    
+    .package-banner button,
+    .package-banner a.consultation-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Tabletler */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .package-banner {
+        background-image: url("/Journey/mobile-banner.webp");
+        padding: 50px 0 100px 0;
+        min-height: 280px;
+        justify-content: center;
+        align-items: center;
+    }
+    .packages-slider {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .package-card {
+        max-width: 320px;
+        margin-bottom: 40px;
+    }
+    
+    .packages h2 {
+        font-size: 40px;
+    }
+    
+    .package-banner h3 {
+        font-size: 50px;
+    }
+    
+    .package-banner p {
+        font-size: 20px;
+        padding: 0 50px;
+    }
+}

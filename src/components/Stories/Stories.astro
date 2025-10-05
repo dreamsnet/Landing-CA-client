@@ -1,0 +1,40 @@
+---
+import "./css/Stories.css";
+import NicSlider from "./NicSlider.jsx";
+const { t } = Astro.props;
+const whatsappUrl = `https://api.whatsapp.com/send?phone=${t.wpNumber}&text=${encodeURIComponent(t.wpMessage)}`;
+---
+
+<div class="stories">
+  <div class="stories-header">
+    <span class="subtitle">{t.hairTransplantTurkey}</span>
+    <h1 class="title">{t.successStories}</h1>
+    <div class="accent-line"></div>
+    <p class="description">{t.storiesText}</p>
+  </div>
+
+  <NicSlider
+    client:visible
+    adaptToImageRatio={true}
+    objectFit="cover"
+    showOverlay={true}
+    showContent={true}
+    showWatchingLabel={false}
+    videos={t.videos}
+  />
+
+  <a
+    href={whatsappUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="more-info-button wp-link"
+  >
+    <img
+      loading="lazy"
+      src="/videothumbnamils/whatsapp-xxl.webp"
+      alt="WhatsApp"
+      class="whatsapp-icon"
+    />
+    <span>{t.getFreeConsultation}</span>
+  </a>
+</div>

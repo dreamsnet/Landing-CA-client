@@ -1,0 +1,16 @@
+---
+import './css/CareForYou.css'
+import ImageSlider from './ImageSlider.astro'
+const { t } = Astro.props;
+---
+
+<div class="CareForYou">
+    <h1>{t.medartHairIst}</h1>
+    <h2>{t.careForYou}</h2>
+    
+    <div class="text-content">
+        <p>{t.careForYouText}</p>
+    </div>
+    
+    <ImageSlider />
+</div>

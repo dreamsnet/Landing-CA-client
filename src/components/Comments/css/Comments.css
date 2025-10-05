@@ -1,0 +1,200 @@
+.comments{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background-color: #f5f5f5;
+  padding: 20px; 
+}
+
+.comments h2{
+  text-align: center;
+  font-size: 50px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Desktop view - default display with 3 cards */
+.desktop-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+  width: 33%;
+}
+
+/* Mobile slider - hidden by default */
+.mobile-slider {
+  display: none;
+  width: 100%;
+  position: relative;
+  overflow: visible; /* Changed from hidden to avoid cutting cards */
+}
+
+.slider-track {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.4s ease;
+  padding: 10px 5px; /* Add padding to ensure shadows are visible */
+}
+
+.review-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 43.416px;
+  background: #FFF;
+  box-shadow: 0px 4.039px 4.039px 0px rgba(0, 0, 0, 0.25);
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+  
+.reviewer-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+}
+
+.review-date {
+  font-size: 14px;
+  color: #777;
+}
+
+.review-content {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.review-footer { 
+  align-self: end;
+}
+
+.google-logo {
+  height: 48px;
+}
+
+.center-card { 
+  z-index: 10;
+}
+
+.side-card {
+  transform: scale(0.85);
+  z-index: 5;
+}
+
+/* Slider indicators for mobile */
+.slider-indicators {
+  display: none; /* Hidden by default, shown on mobile */
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-dot.active {
+  background-color: #555;
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  .comments h2 { 
+    font-size: 30px;
+  }
+  
+  .comments {
+    padding: 20px 0; /* Reduce horizontal padding */
+  }
+  
+  /* Hide desktop view */
+  .desktop-view {
+    display: none;
+  }
+  
+  /* Show mobile slider */
+  .mobile-slider {
+    display: block;
+    width: 100%;
+    padding: 0 15px; /* Add padding to container instead */
+    box-sizing: border-box;
+  }
+  
+  /* Show indicators */
+  .slider-indicators {
+    display: flex;
+    margin-top: 20px; /* Increase spacing for dots */
+  }
+  
+  /* Configure mobile cards */
+  .mobile-slider .review-card {
+    width: calc(100% - 30px); /* Full width minus gap */
+    margin: 0 5px; /* Small margin to ensure card isn't cut off */
+    box-sizing: border-box;
+  }
+  
+  /* Add a container for the slider track to prevent overflow issues */
+  .slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .review-content {
+    font-size: 13px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop-view {
+    gap: 0;
+  }
+  
+  .review-card {
+    padding: 15px;
+  }
+}
+
+/* Small desktop */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .desktop-view {
+    gap: 0;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+  .desktop-view {
+    gap: 0;
+  }
+  
+  .comments h2 {
+    font-size: 55px;
+  }
+}

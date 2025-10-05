@@ -1,0 +1,29 @@
+---
+// FooterWithForm.astro
+import './css/Footer.css';
+const {t } = Astro.props;
+---
+
+<div class="footer">
+    <h2>{t.footerTitle}</h2>
+
+    <div class="information-container">
+        <div class="contact-info">
+            <h4>{t.contactTitle}</h4>
+            <p>+1 514 604 4154</p>
+            <p>ddplasticsurgery@outlook.com</p>
+            <p>1310 Rue Villeray #2,<br/> Montréal, QC H2E 1G4,<br/> Canada</p>
+        </div>
+
+        <div class="contaract">
+            <h4>{t.contaractTitle}</h4>
+            <p>Özel Pendik Bölge Hastanesi</p>
+            <p>Istanbul Group Dental</p>
+            <p>Op. Dr. Teoman Eraslan <br/>Plastic and Aesthetic Surgey Specialist</p>
+        </div>
+    </div>
+
+    <div class="footer-img"><img  src="/D-logo.webp" alt="Medart Hair Logo" /></div>
+</div>
+
+<!-- No script needed since we removed the form -->

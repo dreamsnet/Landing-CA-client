@@ -1,0 +1,258 @@
+.beforeAfter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+    background: #ffffff;
+}
+
+.beforeAfter-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px 60px;
+    background: linear-gradient(148deg, #D4EAF7 -35.39%, #F9F9F9 50.58%);
+    position: relative;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.beforeAfter-header::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(0,113,227,0.1) 0%, rgba(0,113,227,0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.beforeAfter-header::after {
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(0,113,227,0.1) 0%, rgba(0,113,227,0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.beforeAfter h2 {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.beforeAfter h3 {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(135deg, #071F42 0%, #0071E3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.beforeAfter h3::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #0071E3, #40A9FF);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.beforeAfter .beforeAfter-button-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.beforeAfter .beforeAfter-button-container .beforeAfter-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    border: 2px solid #0071E3;
+    border-radius: 20px;
+    color: #0071E3;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.4;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 113, 227, 0.1);
+    background-color: white;
+}
+
+.beforeAfter .beforeAfter-button-container .beforeAfter-button:hover {
+    background: linear-gradient(135deg, #0071E3, #40A9FF);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 113, 227, 0.2);
+}
+
+.beforeAfter .beforeAfter-button-container .beforeAfter-button.active {
+    background: linear-gradient(135deg, #0071E3, #40A9FF);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 113, 227, 0.2);
+    margin-bottom: 3px; /* Add extra space at the bottom for the shadow */
+}
+
+
+.beforeAfter .beforeAfter-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 15px 0;
+}
+
+.beforeAfter .beforeAfter-details .beforeAfter-item{
+   width: 98vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 0;   
+}
+
+/* Custom styles for the BeforeAfter slider */
+.beforeAfter .beforeAfter-details img {
+    aspect-ratio: 4/3 !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+}
+
+.beforeAfter .beforeAfter-details .beforeAfter-item > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Mobil cihazlar */
+@media (max-width: 767px) { 
+    .beforeAfter { 
+        padding: 0; 
+    }
+    
+    .beforeAfter-header {
+        padding: 30px 15px 0px;
+        background: linear-gradient(148deg, #D4EAF7 -35.39%, #F9F9F9 50.58%);
+        margin-bottom: 0;
+    }
+    
+    .beforeAfter-header::before,
+    .beforeAfter-header::after {
+        display: none;
+    }
+    
+    .beforeAfter h2 {
+        font-size: 28px;
+        margin: 15px 0 5px;
+    }
+    
+    .beforeAfter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .beforeAfter h3::after {
+        width: 60px;
+        margin: 5px auto 0;
+    }
+    
+    .beforeAfter .beforeAfter-button-container {
+        width: calc(100% - 20px);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 5px 0 15px;
+        margin: 5px 10px;
+        justify-content: space-between;
+    }
+    
+    .beforeAfter .beforeAfter-button-container .beforeAfter-button {
+        font-size: 14px;
+        padding: 10px 5px;
+        flex: 1;
+        white-space: nowrap;
+        margin-top: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .beforeAfter .beforeAfter-button-container .beforeAfter-button .button-text {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .beforeAfter .beforeAfter-details {
+        margin: 15px 0;
+    }
+    
+    /* Mobile styles for the BeforeAfter slider */
+    .beforeAfter .beforeAfter-details img {
+        aspect-ratio: 4/3 !important;
+        max-height: 250px !important;
+    }
+    
+    .beforeAfter .beforeAfter-details .beforeAfter-item > div {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Tabletler */
+@media (min-width: 768px) and (max-width: 1023px) {  }
+
+/* Küçük masaüstü */
+@media (min-width: 1024px) and (max-width: 1439px) {  }
+
+/* Büyük masaüstü */
+@media (min-width: 1440px) {  }

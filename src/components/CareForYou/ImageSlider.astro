@@ -1,0 +1,339 @@
+---
+// CustomSlider.astro
+---
+
+<div class="slider-container" id="slider-container">
+  <button aria-label="previous" class="slider-button left" id="prev-button">
+    <svg 
+      width="24" 
+      height="24" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      stroke-width="2" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+    >
+      <polyline points="15 18 9 12 15 6" />
+    </svg>
+  </button>
+  <div class="slider" id="slider">
+    <div class="lazy-image slide left" data-index="0" style="background: transparent;">
+      <img loading="lazy"  src="/CareForYou/cliniclobby2.webp" alt="Slide 1" style="vertical-align: bottom;" />
+    </div>
+    <div class="lazy-image slide active" data-index="1" style="background: transparent;">
+      <img loading="lazy" src="/CareForYou/entrence.webp" alt="Slide 2" style="vertical-align: bottom;" />
+    </div>
+    <div class="lazy-image slide right" data-index="2" style="background: transparent;">
+      <img loading="lazy" src="/CareForYou/lobby1.webp" alt="Slide 3" style="vertical-align: bottom;" />
+    </div>
+  </div>
+  <button aria-label="next" class="slider-button right" id="next-button">
+    <svg 
+      width="24" 
+      height="24" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      stroke-width="2" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+    >
+      <polyline points="9 18 15 12 9 6" />
+    </svg>
+  </button>
+</div>
+
+<style>
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto 0;
+  overflow: hidden;
+  height: 400px;
+  justify-items: center;
+  align-content: center;
+  border-radius: 20px;
+  background: transparent;
+  display: grid;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80%;
+  width: 80%;
+  background: transparent;
+}
+
+.slide {
+  position: absolute; 
+  opacity: 0.5;
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: 50%;
+  filter: brightness(0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform-origin: center center;
+  background: transparent;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* Aktif Slide */
+.slide.active {
+  z-index: 2;
+  opacity: 1;
+  width: 85%;
+  filter: brightness(1.05);
+  box-shadow: 0 15px 30px rgba(0, 113, 227, 0.2);
+}
+
+.slide.active img {
+  transform: scale(1.02);
+}
+
+/* Sol Slide */
+.slide.left {
+  transform: translateX(-65%) scale(0.8) rotateY(5deg);
+  z-index: 1;
+}
+
+/* Sağ Slide */
+.slide.right {
+  transform: translateX(65%) scale(0.8) rotateY(-5deg);
+  z-index: 1;
+}
+
+/* Slider Buttons */
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 113, 227, 0.7);
+  color: var(--text-color-reverse, #fff);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sol Buton */
+.slider-button.left {
+  left: 20px; /* Sol kenardan uzaklık */
+}
+
+/* Sağ Buton */
+.slider-button.right {
+  right: 20px; /* Sağ kenardan uzaklık */
+}
+
+.slider-button:hover {
+  background-color: rgba(0, 113, 227, 0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+@media (max-width: 576px) {
+  /* Aktif Slide */
+  .slide.active {
+    width: 90%;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  
+  .slider-container {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Fix for Chrome on iOS */
+  @supports (-webkit-touch-callout: none) {
+    .slider {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  .slider-container {
+    height: 500px;
+  }
+  .slide.active {
+    width: 69%;
+  }
+}
+</style>
+
+<script>
+  // Client-side JavaScript
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('slider-container');
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    
+    let currentIndex = 1; // Start with the middle slide active
+    const slideCount = slides.length;
+    
+    // Auto-slide functionality
+    let autoSlideInterval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Change slide every 5 seconds
+    
+    // Pause auto-slide on hover
+    if (container) {
+      container.addEventListener('mouseenter', () => {
+        clearInterval(autoSlideInterval);
+      });
+      
+      container.addEventListener('mouseleave', () => {
+        autoSlideInterval = setInterval(() => {
+          nextSlide();
+        }, 5000);
+      });
+    }
+    
+    // Lazy loading with Intersection Observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const img = entry.target.querySelector('img');
+            if (img && img.dataset.src) {
+              img.src = img.dataset.src;
+              img.removeAttribute('data-src');
+            }
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    
+    slides.forEach((slide) => {
+      observer.observe(slide);
+    });
+    
+    // Slide transition function
+    function updateSlides() {
+      slides.forEach((slide, index) => {
+        slide.classList.remove('active', 'left', 'right');
+        
+        if (index === currentIndex) {
+          slide.classList.add('active');
+        } else if (index === (currentIndex - 1 + slideCount) % slideCount) {
+          slide.classList.add('left');
+        } else {
+          slide.classList.add('right');
+        }
+      });
+    }
+    
+    // Navigation functions
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slideCount;
+      updateSlides();
+    }
+    
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+      updateSlides();
+    }
+    
+    // Event listeners
+    if (prevButton) {
+      prevButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        prevSlide();
+        // Reset auto-slide timer when manually navigating
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(() => {
+          nextSlide();
+        }, 5000);
+      });
+    }
+    
+    if (nextButton) {
+      nextButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        nextSlide();
+        // Reset auto-slide timer when manually navigating
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(() => {
+          nextSlide();
+        }, 5000);
+      });
+    }
+    
+    // Touch events for mobile
+    let touchStart: number | null = null;
+    let touchEnd: number | null = null;
+    const minSwipeDistance = 20;
+    
+    if (container) {
+      container.addEventListener('touchstart', (e) => {
+        touchEnd = null;
+        touchStart = e.targetTouches[0].clientX;
+      });
+      
+      container.addEventListener('touchmove', (e) => {
+        touchEnd = e.targetTouches[0].clientX;
+      });
+      
+      container.addEventListener('touchend', () => {
+        if (!touchStart || !touchEnd) return;
+        
+        const distance = touchStart - touchEnd;
+        if (Math.abs(distance) > minSwipeDistance) {
+          if (distance > 0) {
+            nextSlide();
+          } else {
+            prevSlide();
+          }
+          
+          // Reset auto-slide timer when manually navigating
+          clearInterval(autoSlideInterval);
+          autoSlideInterval = setInterval(() => {
+            nextSlide();
+          }, 5000);
+        }
+      });
+    }
+    
+    // Initialize slides
+    updateSlides();
+  });
+</script>

@@ -1,0 +1,46 @@
+---
+import './css/Testimonials.css'
+const { t } = Astro.props;
+---
+
+<div class="testimonials">
+
+    <h2>{t.provenResults}</h2>
+    <h3>{t.ourSuccessStory}</h3>
+
+    <p>{t.testimonialsText}</p>
+
+    <div class="numbers">
+        <div class="number">
+           <div class="number-inside">  
+            <span>25K+</span>
+            <p>{t.happyPatients}</p>
+           </div>
+        </div>
+        
+        <div class="center-divider"></div>
+        
+        <div class="number">
+            <div class="number-inside">  
+            <span>15+</span>
+            <p>{t.yearsExperience}</p>
+            </div>
+        </div>
+
+        <div class="number">
+            <div class="number-inside">  
+            <span>100+</span>
+            <p>{t.countries}</p>
+            </div>
+        </div>
+        
+        <div class="center-divider"></div>
+        
+        <div class="number">
+            <div class="number-inside">  
+            <span>50M+</span>
+            <p>{t.grafts}</p>
+            </div>
+        </div>
+    </div>
+</div>

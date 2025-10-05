@@ -1,0 +1,52 @@
+---
+import "./css/Packages.css";
+
+// Get translation data and other props from Astro
+const { t } = Astro.props;
+const whatsappUrl = `https://api.whatsapp.com/send?phone=${t.wpNumber}&text=${encodeURIComponent(t.wpMessage)}`;
+---
+
+<div class="packages">
+  <h2>{t.packagesTitle}</h2>
+  <p>{t.packagesSubtitle}</p>
+
+  <div class="packages-container single-package">
+    <div class="package-card" id="premium-package">
+      <div class="package-header">
+        <div class="icon" set:html={t.packageData.premium.svg} />
+        <div class="package-name">{t.packageData.premium.name}</div>
+      </div>
+
+      <div class="package-content">
+        {
+          t.packageData.premium.features.map((feature: string) => (
+            <div class="feature">
+              <span class="check-icon">&#10003;</span>
+              <span class="feature-text">{feature}</span>
+            </div>
+          ))
+        }
+      </div>
+
+      <a
+        href={t.packageData.premium.consultationLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="consultation-btn"
+      >
+        {t.packageData.premium.consultationText}
+      </a>
+    </div>
+  </div>
+
+  <div class="package-banner">
+    <h3>{t.bannerTitle}</h3>
+    <p>{t.bannerText}</p>
+    <a
+      href={whatsappUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="consultation-btn wp-link">{t.consultationButton}</a
+    >
+  </div>
+</div>

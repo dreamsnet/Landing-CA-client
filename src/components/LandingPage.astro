@@ -1,0 +1,116 @@
+---
+// LandingPage.astro
+import Header from './Header/Header.astro';
+import Testimonials from './Testimonials/Testimonials.astro';
+import CareForYou from './CareForYou/CareForYou.astro';
+import Stories from './Stories/Stories.astro';
+import Services from './Services/Services.astro';
+import Journey from './Journey/Journey.astro';
+import MiddleForm from './MiddleForm/MiddleForm.jsx';
+import Luxury from './Luxury/Luxury.astro';
+import Packages from './Packages/Packages.astro';
+import Comments from './Comments/Comments.astro';
+import Footer from './Footer/Footer.astro';
+import FAQ from './FAQ/FAQ.astro';
+import BeforeAfter from './BeforeAfter/BeforeAfter.astro';
+
+import AnalyticsCollector from '../lib/AnalyticsCollector.js';
+import SlidingBottomSheet from '../lib/SlidingBottomSheet.astro';
+// Props tanımı - t özelliğini alın
+const { t } = Astro.props;
+---
+
+<style>
+.two-cols-container {
+	width: 100%;
+	background: linear-gradient(148deg, #D4EAF7 -35.39%, #F9F9F9 50.58%);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+	padding: 40px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.two-cols-container::before {
+	content: '';
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 250px;
+	height: 250px;
+	background: radial-gradient(circle, rgba(0,113,227,0.1) 0%, rgba(0,113,227,0) 70%);
+	border-radius: 50%;
+	z-index: 0;
+}
+
+.two-cols-container::after {
+	content: '';
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	width: 250px;
+	height: 250px;
+	background: radial-gradient(circle, rgba(0,113,227,0.1) 0%, rgba(0,113,227,0) 70%);
+	border-radius: 50%;
+	z-index: 0;
+}
+
+.two-cols {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	gap: 30px;
+	max-width: 1600px;
+	margin: 0 auto;
+	width: 95%;
+	position: relative;
+	z-index: 1;
+}
+
+/* Mobil cihazlar */
+@media (max-width: 767px) {
+	.two-cols-container {
+		padding: 20px 0;
+	}
+	
+	.two-cols {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 0;
+		gap: 0;
+	}
+}
+
+/* Tabletler */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Küçük masaüstü */
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+
+/* Büyük masaüstü */
+@media (min-width: 1440px) {
+}
+</style>
+<SlidingBottomSheet   t={t} />
+<AnalyticsCollector client:load />
+<Header t={t} />
+<div class="two-cols-container">
+	<div class="two-cols">
+		<Testimonials t={t} />
+		<CareForYou t={t} />
+	</div>
+</div>
+<Stories t={t} />
+<Services t={t} />
+<BeforeAfter t={t} />
+<Journey t={t} />
+<div class="two-cols-container">
+	<div class="two-cols">
+		<MiddleForm client:only="react" t={t} />
+		<Luxury t={t} />
+	</div>
+</div>
+<Packages t={t} />
+<Comments t={t} />
+<FAQ t={t} />
+<Footer t={t} />

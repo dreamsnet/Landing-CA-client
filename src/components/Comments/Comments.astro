@@ -1,0 +1,149 @@
+---
+// Comments.astro - fixed for proper mobile display
+import './css/Comments.css';
+const {t} = Astro.props;
+const reviews = t.reviews;
+// Sample review data - you can replace with your actual data
+ 
+---
+
+<div class="comments">
+  <h2>{t.comments} <br/>{t.ourPatients}</h2>
+
+  <div class="reviews-container">
+    <!-- Desktop view - always show 3 cards -->
+    <div class="desktop-view">
+      <div class="review-card side-card">
+        <div class="review-header">
+          <div class="reviewer-name">{reviews[0].name}</div>
+          <div class="review-date">{reviews[0].date}</div>
+        </div>
+        <div class="review-content">
+          {reviews[0].content}
+        </div>
+        <div class="review-footer">
+          <img loading="lazy" src="/google-reviews.webp" alt="Google" class="google-logo" />
+        </div>
+      </div>
+      
+      <div class="review-card center-card">
+        <div class="review-header">
+          <div class="reviewer-name">{reviews[1].name}</div>
+          <div class="review-date">{reviews[1].date}</div>
+        </div>
+        <div class="review-content">
+          {reviews[1].content}
+        </div>
+        <div class="review-footer">
+          <img loading="lazy" src="/google-reviews.webp" alt="Google" class="google-logo" />
+        </div>
+      </div>
+      
+      <div class="review-card side-card">
+        <div class="review-header">
+          <div class="reviewer-name">{reviews[2].name}</div>
+          <div class="review-date">{reviews[2].date}</div>
+        </div>
+        <div class="review-content">
+          {reviews[2].content}
+        </div>
+        <div class="review-footer">
+          <img loading="lazy" src="/google-reviews.webp" alt="Google" class="google-logo" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile slider view with container to prevent cutoff -->
+    <div class="mobile-slider">
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          {reviews.map((review, index) => (
+            <div class="review-card" data-index={index}>
+              <div class="review-header">
+                <div class="reviewer-name">{review.name}</div>
+                <div class="review-date">{review.date}</div>
+              </div>
+              <div class="review-content">
+                {review.content}
+              </div>
+              <div class="review-footer">
+                <img loading="lazy" src="/google-reviews.webp" alt="Google" class="google-logo" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Mobile navigation dots -->
+      <div class="slider-indicators">
+        {reviews.map((_, index) => (
+          <span class={`slider-dot ${index === 0 ? "active" : ""}`} data-index={index}></span>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Simple mobile slider script
+  document.addEventListener('DOMContentLoaded', function() {
+    // Only run on mobile
+    if (window.innerWidth > 767) return;
+    
+    const slider = document.getElementById('sliderTrack');
+    const dots = document.querySelectorAll('.slider-dot');
+    const slides = document.querySelectorAll('.mobile-slider .review-card');
+    
+    if (!slider || !dots.length || !slides.length) return;
+    
+    let currentIndex = 0;
+    let startX = 0;
+    let slideWidth = slides[0].offsetWidth + 15; // 15px gap
+    
+    // Handle touch events
+    slider.addEventListener('touchstart', e => {
+      startX = e.touches[0].clientX;
+    });
+    
+    slider.addEventListener('touchend', e => {
+      const diffX = e.changedTouches[0].clientX - startX;
+      
+      if (Math.abs(diffX) > 50) { // Minimum swipe distance
+        if (diffX > 0 && currentIndex > 0) {
+          // Swipe right - go to previous
+          goToSlide(currentIndex - 1);
+        } else if (diffX < 0 && currentIndex < slides.length - 1) {
+          // Swipe left - go to next
+          goToSlide(currentIndex + 1);
+        }
+      }
+    });
+    
+    // Setup dots
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => goToSlide(index));
+    });
+    
+    // Function to navigate to a slide
+    function goToSlide(index) {
+      currentIndex = index;
+      slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      
+      // Update active dot
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+    
+    // Set initial position
+    goToSlide(0);
+    
+    // Recalculate on resize
+    window.addEventListener('resize', function() {
+      if (window.innerWidth <= 767) {
+        slideWidth = slides[0].offsetWidth + 15;
+        goToSlide(currentIndex);
+      }
+    });
+  });
+</script>

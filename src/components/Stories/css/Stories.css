@@ -1,0 +1,270 @@
+.stories{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(148deg, #D4EAF7 -42.31%, #F9F9F9 50.58%);
+    padding: 100px 15px;
+    align-items: center;
+    gap:10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.stories-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    z-index: 2;
+    animation: fadeInUp 0.8s ease-out forwards;
+    padding: 30px 90px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 113, 227, 0.08);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stories-header::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(0,113,227,0.15) 0%, rgba(0,113,227,0) 70%);
+    border-radius: 50%;
+    top: -40px;
+    left: -60px;
+    z-index: -1;
+}
+
+.stories-header::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(0,113,227,0.1) 0%, rgba(0,113,227,0) 70%);
+    border-radius: 50%;
+    bottom: -20px;
+    right: -40px;
+    z-index: -1;
+}
+
+.stories .subtitle {
+    color: #0071E3;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out 0.2s forwards;
+}
+
+.stories .title {
+    color: #1D1D1F; 
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin: 0 0 15px 0;
+    position: relative;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out 0.4s forwards;
+    background: linear-gradient(90deg, #1D1D1F, #4A4A4A);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.stories .accent-line {
+    width: 140px;
+    height: 4px;
+    background: linear-gradient(90deg, #0071E3, #40A9FF);
+    margin: 5px 0 20px;
+    border-radius: 2px;
+    opacity: 0;
+    animation: expandWidth 0.6s ease-out 0.6s forwards;
+    transform-origin: center;
+}
+
+@keyframes expandWidth {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        width: 140px;
+    }
+}
+
+.stories .description {
+    color: #6B7280;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    letter-spacing: 1.62px;
+    max-width: 800px;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out 0.8s forwards;
+}
+
+
+.stories button.more-info-button,
+.stories a.more-info-button{
+    border-radius: 20px;
+    background: linear-gradient(90deg, #0071E3, #40A9FF);
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    color: #fff;
+    text-align: center; 
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 113, 227, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out 1s forwards;
+    text-decoration: none;
+}
+
+.stories .whatsapp-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.stories button.more-info-button:hover,
+.stories a.more-info-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 113, 227, 0.4);
+    background: linear-gradient(90deg, #40A9FF, #0071E3);
+    color: #fff;
+    text-decoration: none;
+}
+
+.stories button.more-info-button:active,
+.stories a.more-info-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(0, 113, 227, 0.3);
+}
+
+.stories button.more-info-button::before,
+.stories a.more-info-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    animation: shimmer 3s infinite linear;
+    z-index: 1;
+}
+
+.stories button.more-info-button span,
+.stories a.more-info-button span {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes shimmer {
+    from {
+        transform: translateX(-100%) rotate(45deg);
+    }
+    to {
+        transform: translateX(100%) rotate(45deg);
+    }
+}
+
+
+  /* Mobil cihazlar */
+  @media (max-width: 767px) { 
+    .stories{ 
+        padding: 15px 0 40px; 
+    }
+    .stories button{
+        font-size:18px;
+    }
+    
+    .stories-header {
+        margin-bottom: 30px;
+        padding: 20px 15px;
+        box-shadow: 0 5px 15px rgba(0, 113, 227, 0.05);
+    }
+    
+    .stories-header::before,
+    .stories-header::after {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .stories .subtitle {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
+    
+    .stories .title {
+        font-size: 28px;
+    }
+    
+    .stories .accent-line {
+        width: 60px;
+        height: 3px;
+        margin: 5px 0 15px;
+    }
+    
+    .stories .description {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+    
+    .stories button.more-info-button,
+    .stories a.more-info-button{
+        font-size:18px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+ }
+
+/* Tabletler */
+@media (min-width: 768px) and (max-width: 1023px) {   }
+
+/* Küçük masaüstü */
+@media (min-width: 1024px) and (max-width: 1439px) {   }
+
+/* Büyük masaüstü */
+@media (min-width: 1440px) {  }

@@ -1,0 +1,557 @@
+.services {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+    background: #ffffff;
+}
+
+.services-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px 60px;
+    background: linear-gradient(148deg, #D4EAF7 -35.39%, #F9F9F9 50.58%);
+    position: relative;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.services-header::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(0,113,227,0.1) 0%, rgba(0,113,227,0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.services-header::after {
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(0,113,227,0.1) 0%, rgba(0,113,227,0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(0,113,227,0.1) 0%, rgba(0,113,227,0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.services::after {
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(0,113,227,0.1) 0%, rgba(0,113,227,0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.services h2 {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.services h3 {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(135deg, #071F42 0%, #0071E3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.services h3::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #0071E3, #40A9FF);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.services .services-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.services .services-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.services .services-button-container .services-button {
+    flex: 1;
+    max-width: 300px;
+}
+
+.services .scroll-indicator {
+    display: none;
+    margin-top: 15px;
+}
+
+.services .scroll-indicator span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #D1D5DB;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.services .scroll-indicator span:nth-child(1) {
+    background-color: #0071E3;
+}
+
+.services .services-button-container .services-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    border: 2px solid #0071E3;
+    border-radius: 20px;
+    color: #0071E3;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.4;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 113, 227, 0.1);
+    background-color: white;
+}
+
+.services .services-button-container .services-button:hover{
+    background: linear-gradient(135deg, #0071E3, #40A9FF);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 113, 227, 0.2);
+}
+
+    .services .services-button-container .services-button.active{
+        background: linear-gradient(135deg, #0071E3, #40A9FF);
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 113, 227, 0.2);
+        margin-bottom: 3px; /* Add extra space at the bottom for the shadow */
+    }
+
+/****/
+
+.services .service-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 15px 0;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service-details .service-detail {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 0px 20px 20px 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.service-details .service-detail h3 {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #071F42 0%, #0071E3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.service-details .service-detail p {
+    color: #4B5563;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 156%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    letter-spacing: 0.2px;
+}
+
+.service-details .advantages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.service-details .advantages .advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.service-details .advantages .advantage img {
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 113, 227, 0.2);
+    transition: all 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.service-details .advantages .advantage img:hover {
+    transform: scale(1.02);
+}
+
+.service-details .advantages .advantage h4 {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin: 10px 0 15px;
+    background: linear-gradient(135deg, #071F42 0%, #0071E3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.service-details .advantages .advantage h4::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #0071E3, #40A9FF);
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.service-details .advantages .advantage ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    width: 100%;
+}
+
+.service-details .advantages .advantage ul li {
+    color: #4B5563;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 8px 10px 8px 35px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+    border-left: 3px solid rgba(0, 113, 227, 0.3);
+}
+
+.service-details .advantages .advantage ul li:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 113, 227, 0.1);
+    transform: translateX(3px);
+    border-left: 3px solid #0071E3;
+}
+
+.service-details .advantages .advantage ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 10px;
+    color: #0071E3;
+    font-weight: bold;
+    background: linear-gradient(135deg, #0071E3, #40A9FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.service-details .advantages .advantage button,
+.service-details .advantages .advantage a.more-info-button {
+    border-radius: 50px;
+    background: linear-gradient(135deg, #0071E3, #40A9FF);
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 113, 227, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.service-details .advantages .advantage button::before,
+.service-details .advantages .advantage a.more-info-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    transition: left 0.7s ease;
+    z-index: -1;
+}
+
+.service-details .advantages .advantage button:hover,
+.service-details .advantages .advantage a.more-info-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 113, 227, 0.3);
+    color: #fff;
+    text-decoration: none;
+}
+
+.service-details .advantages .advantage button:hover::before,
+.service-details .advantages .advantage a.more-info-button:hover::before {
+    left: 100%;
+}
+
+
+  /* Mobil cihazlar */
+  @media (max-width: 767px) { 
+    .services { 
+        padding: 0; 
+        background: #ffffff;
+    }
+    
+    .services-header {
+        padding: 30px 15px 0px;
+        background: linear-gradient(148deg, #D4EAF7 -35.39%, #F9F9F9 50.58%);
+        margin-bottom: 0;
+    }
+    
+    .services-header::before,
+    .services-header::after {
+        display: none;
+    }
+    
+    .services h2 {
+        font-size: 28px;
+        margin: 15px 0 5px;
+    }
+    
+    .services h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .services h3::after {
+        width: 60px;
+        margin: 5px auto 0;
+    }
+
+    .services .scroll-indicator {
+        display: none;
+    }
+    
+    .services .services-button-wrapper {
+        margin: 5px 0;
+    }
+    
+    .services .services-button-wrapper {
+        width: 100%;
+        overflow: visible;
+        padding: 0;
+        margin: 5px 0;
+    }
+    
+    .services .services-button-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        padding: 5px 0 15px;
+        margin: 5px 0;
+        width: 100%;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        justify-content: center; /* Center the buttons */
+    }
+    
+    .services .services-button-container::before,
+    .services .services-button-container::after {
+        content: '';
+        flex: 0 0 10px;
+    }
+    
+    .services .services-button-container::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    .services .services-button-container .services-button {
+        font-size: 16px;
+        padding: 10px 15px;
+        min-width: 180px;
+        flex: 0 0 auto;
+        white-space: nowrap;
+        margin-top: 5px;
+        max-width: none;
+    }
+    
+    .service-details .advantages {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-details .advantages .advantage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-details .service-detail p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .service-details .advantages .advantage h4 {
+        font-size: 24px;
+        margin: 5px 0;
+    }
+    
+    .service-details .advantages .advantage img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    .service-details .advantages .advantage ul li {
+        font-size: 16px;
+        padding: 6px 8px 6px 30px;
+        margin-bottom: 10px;
+    }
+    
+    .service-details .advantages .advantage ul li::before {
+        left: 8px;
+    }
+
+    .service-details .advantages .advantage button,
+    .service-details .advantages .advantage a.more-info-button {
+        font-size: 16px;
+        padding: 12px 20px;
+        width: 100%;
+    }
+    
+    .services .service-details {
+        margin: 15px 0;
+    }
+    
+    .service-details .service-detail h3 { 
+        font-size: 22px; 
+        margin: 10px 0;
+    }
+  }
+  
+  /* Tabletler */
+  @media (min-width: 768px) and (max-width: 1023px) {   }
+  
+  /* Küçük masaüstü */
+  @media (min-width: 1024px) and (max-width: 1439px) {   }
+  
+  /* Büyük masaüstü */
+  @media (min-width: 1440px) {  }
