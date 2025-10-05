@@ -1,17 +1,13 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+import react from "@astrojs/react";
+import vercel from "@astrojs/vercel";
 
-import react from '@astrojs/react'; 
-import node from '@astrojs/node';  
-
-// https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
-  output: 'server',
-  adapter: node({
-    mode: 'standalone'
-  }),
-  devToolbar: {
-    enabled: false, // Disable the Astro dev toolbar
-  },
+	integrations: [react()],
+	output: "server",
+	adapter: vercel(),
+	devToolbar: {
+		enabled: false,
+	},
 });
